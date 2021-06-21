@@ -40,7 +40,7 @@ a:hover,a:focus { text-decoration: none; }
 .wrapper{ padding-top: 48px; }
 .main{ display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px; margin: auto; padding: 15px; max-width: 1200px; }
 .main .item{ position: relative; }
-.main .item .images { position: relative; width: 100%; height: 250px; overflow: hidden; align-items: center; background-color: #ffffff; }
+.main .item .images { position: relative; width: 100%; height: 240px; overflow: hidden; align-items: center; background-color: #ffffff; }
 .main .item .images img{ object-fit: cover; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .main .item:hover .images img{ width: 110%; height: 110%; opacity: 80%; transition: all 0.3s ease 0s; }
 .main .item .title{ margin: 0.5rem 0; font-size: 1.2rem; }
