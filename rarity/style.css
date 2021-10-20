@@ -31,6 +31,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .top .logo{ margin: 10px auto; width: 100px; }
 .top .logo img{ width: 100%; height: auto; }
 .top h1{ text-align: center; font-size: 2rem; color: #ffffff; }
+.top h1 span{ display: inline-block; }
 
 .main{ column-count: 4; column-gap: 0; padding: 10px; }
 .main .block{ display: inline-block; padding: 10px; width: 100%; }
@@ -83,5 +84,5 @@ table { border-collapse: collapse; border-spacing: 0; }
 @media screen and (max-width: 599px){ 
   .wrapper{ padding-bottom: 100px; }
   .main{ column-count: 1; }
-
+  .top h1{ font-size: 1.4rem; font-weight: normal; }
 }
