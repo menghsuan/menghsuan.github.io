@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6,p{ margin: 0.5em 0; font-weight: normal; }
   to { opacity: 1 }
 }
 
-.block{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 1em 1.5em; border: 1px solid #ffffff; text-align: center; color: #ffffff; background-color: rgba(0, 0, 0, 0.55); }
+.block{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 1em 1.5em 0.6em 1.5em; border: 1px solid #ffffff; text-align: center; color: #ffffff; background-color: rgba(0, 0, 0, 0.55); }
 
 .top{ margin: 0.5em 0; }
 .top h1{ margin: 0em 0; font-size: 3em; font-weight: normal; line-height: 1; }
@@ -46,7 +46,7 @@ h1,h2,h3,h4,h5,h6,p{ margin: 0.5em 0; font-weight: normal; }
 .address h4{ margin-bottom: 0em; }
 .address .note{ letter-spacing: 0.12em }
 
-.landscape .top{ white-space: nowrap; }
+.landscape .top{ margin-bottom: 0; white-space: nowrap; }
 .landscape .top h1{ display: inline-block; }
 .landscape .top h1:nth-child(2){ margin: 0 0.4em; font-size: 2.5em; }
 .landscape .zh-name, .landscape .date, .landscape .line, .landscape .address{ margin-bottom: 0.6em; }
