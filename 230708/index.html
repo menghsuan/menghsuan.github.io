@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,viewport-fit=cover">
-    <title>K&amp;M</title>
+    <title>K &amp; M</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="icon" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=M+PLUS+1+Code:wght@100;300&family=M+PLUS+Rounded+1c:wght@100;300&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=M+PLUS+Rounded+1c:wght@100;300&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
     <div class="wrapper">
       <div class="bg slideshow-container">
         <div class="Slides fade"><img src="images/bg01.jpg"></div>
@@ -37,17 +36,10 @@
         <div class="Slides fade"><img src="images/bg20.jpg"></div>
         <div class="Slides fade"><img src="images/bg21.jpg"></div>
       </div>
-      <div style="display: none;">
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-      </div>
       <div class="portrait block">
         <div class="top font-handwriting en"><h1 class="t1">KaFai</h1> <h1>&amp;</h1> <h1 class="t2">MengHsuan</h1></div>
         <div class="zh-name">
-          <div><h3>潘家輝</h3><h5 class="subtitle">男方家長</h5><h4>潘國雄</h4><h4>潘璇薇</h4></div>
+          <div><h3>潘家輝</h3><h5 class="subtitle">男方家長</h5><!--h4>潘國雄</h4--><h4>潘璇薇</h4></div>
           <div><h3>游孟璇</h3><h5 class="subtitle">女方家長</h5><h4>游象棋</h4><h4>游陳春香</h4></div>
         </div>
         <div class="line"><hr><h5 class="fwn">誠摯邀請您參加我們的婚禮</h5><hr></div>
@@ -59,7 +51,7 @@
       <div class="landscape block">
         <div class="top font-handwriting en"><h1>KaFai</h1><h1>&amp;</h1><h1>MengHsuan</h1></div>
         <div class="zh-name">
-          <div><h3>潘家輝</h3><h5 class="subtitle">男方家長</h5><h4><span>潘國雄</span><span>潘璇薇</span></h4></div>
+          <div><h3>潘家輝</h3><h5 class="subtitle">男方家長</h5><h4><!--span>潘國雄</span--><span>潘璇薇</span></h4></div>
           <div><h3>游孟璇</h3><h5 class="subtitle">女方家長</h5><h4><span>游象棋</span><span>游陳春香</span></h4></div>
         </div>
         <div class="line"><hr><h5 class="fwn">誠摯邀請您參加我們的婚禮</h5><hr></div>
@@ -75,19 +67,15 @@
       function showSlides() {
         let i;
         let slides = document.getElementsByClassName("Slides");
-        let dots = document.getElementsByClassName("dot");
         for (i = 0; i < slides.length; i++) {
           slides[i].style.display = "none";  
         }
         slideIndex++;
         if (slideIndex > slides.length) {slideIndex = 1}    
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
         slides[slideIndex-1].style.display = "block";  
-        dots[slideIndex-1].className += " active";
-        setTimeout(showSlides, 5200); // Change image every 2 seconds
+        setTimeout(showSlides, 5200); 
       }
+      console.log(" 你這偷窺狂 ✧◝(⁰▿⁰)◜✧ ")
     </script>
   </body>
 </html>
