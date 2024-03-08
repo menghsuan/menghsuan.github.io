@@ -20,11 +20,13 @@ input[type="checkbox"] { -webkit-appearance: checkbox; }
 textarea:focus, input:focus{ outline: none; }
 a { text-decoration: none; color:  var( --main-color ); }
 a:hover,a:focus { text-decoration: none; }
+iframe{ border: 0px; }
 
 .title{ color: var( --main-color ); }
 .tag{ color: var( --accent-color ); }
 .gray{ color: var( --accent-color ); }
-
+.link{ }
+.link:hover{ text-decoration: underline; }
 
 /*------------------------------------*\
                 Layout
@@ -77,10 +79,13 @@ a:hover,a:focus { text-decoration: none; }
 .portfolio .images img{ width: inherit; max-width: 100%; }
 .portfolio .images-info{ margin: 0.6rem 0 2rem; }
 
+.portfolio .images-one iframe { width: 500px; height: 350px; }
+
 @media screen and (min-width:500px) and (max-width:900px){
   .portfolio .images-two{ grid-template-columns: 1fr 1fr; padding: 15px; }
 }
 @media screen and (max-width:500px){ 
   .portfolio .images-two{ grid-template-columns: 1fr; padding: 15px; }
+  .portfolio .images-one iframe { width: 80vw; height: 60vw; }
 }
 
