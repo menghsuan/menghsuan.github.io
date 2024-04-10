@@ -45,7 +45,7 @@ iframe{ border: 0px; }
 .filter_menu{ margin: 1rem auto 0; padding: 8px 15px; list-style: none; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
 .filter_menu:after{ content:""; display: block; clear: both; }
 .filter_menu .btn{ display: inline-block; padding: 8px 18px; margin: 0 10px 0 0; border-radius: 20px; color: #777777; border: 1px solid #999999; font-size: 1rem; }
-.filter_menu .btn:hover{ color: #666666; cursor: pointer; }
+.filter_menu .btn:hover{ color: #555555; cursor: pointer; border: 1px solid #555555; background-color: rgba(0, 0, 0, 0.1); }
 .filter_menu .btn.active{ background-color: #666666; border: 1px solid #666666; color: #ffffff; }
 .filterDiv{ display: none; }
 .show{ display: block; }
@@ -63,7 +63,7 @@ iframe{ border: 0px; }
   .main .item .images { height: 200px; }
 }
 @media screen and (max-width:500px){ 
-  .main{ display: grid; grid-template-columns: 1fr; grid-gap: 15px; padding: 15px; }
+  .main{ display: grid; grid-template-columns: 1fr; grid-gap: 20px; padding: 15px; }
   .main .item .images { height: 200px; }
   .filter_menu .btn{ margin-right: 8px; padding: 6px 14px; font-size: 0.9rem; }
 }
