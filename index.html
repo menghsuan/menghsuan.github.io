@@ -42,13 +42,13 @@
     <div class="wrapper">
       <div class="filter_bar">
         <div id="myBtnContainer" class="filter_menu">
-          <button class="btn active" onclick="filterSelection('all')">All</button>
-          <button class="btn" onclick="filterSelection('ui')">Interface design</button>
+          <button id="button_all" class="btn active" onclick="filterSelection('all')">All</button>
+          <button id="button_ui" class="btn" onclick="filterSelection('ui')">Interface design</button>
           <!--button class="btn" onclick="filterSelection('web')">Web design</button>
           <button class="btn" onclick="filterSelection('app')">Mobile app</button-->
-          <button class="btn" onclick="filterSelection('vi')">Visual identity</button>
-          <button class="btn" onclick="filterSelection('logo')">Logo design</button>
-          <button class="btn" onclick="filterSelection('ill')">Illustration</button>
+          <button id="button_vi" class="btn" onclick="filterSelection('vi')">Visual identity</button>
+          <button id="button_logo" class="btn" onclick="filterSelection('logo')">Logo design</button>
+          <button id="button_ill" class="btn" onclick="filterSelection('ill')">Illustration</button>
         </div>
       </div>
 
@@ -111,7 +111,29 @@
     </div>
 
     <script>
-      filterSelection("all")
+      function filterByHash(c) {
+        if (window.location.hash) {
+          let hash = window.location.hash.slice(1);
+          filterSelection(hash);
+
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].classList.remove("active");
+            if (btns[i].id === "button_" + hash) {
+              btns[i].classList.add("active");
+            }
+          }
+        } else {
+          filterSelection("all")
+        }
+      }
+      
+      filterByHash();
+      window.onhashchange = function() {
+        filterByHash();
+      } 
+      
       function filterSelection(c) {
         var x, i;
         x = document.getElementsByClassName("filterDiv");
