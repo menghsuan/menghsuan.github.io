@@ -44,7 +44,7 @@ iframe{ border: 0px; }
 .filter_bar{ margin: auto; width: 100vw; max-width: 1200px; }
 .filter_menu{ margin: 1rem auto 0; padding: 8px 15px; list-style: none; white-space: nowrap; overflow-x: auto; overflow-y: hidden; }
 .filter_menu:after{ content:""; display: block; clear: both; }
-.filter_menu .btn{ display: inline-block; padding: 8px 18px; margin: 0 10px 0 0; border-radius: 20px; color: #777777; border: 1px solid #999999; font-size: 1rem; }
+.filter_menu .btn{ display: inline-block; padding: 8px 18px; margin: 0 10px 0 0; border-radius: 20px; color: #777777; background-color: #f2f2f2; border: 1px solid #999999; font-size: 1rem; }
 .filter_menu .btn:hover{ color: #555555; cursor: pointer; border: 1px solid #555555; background-color: rgba(0, 0, 0, 0.1); }
 .filter_menu .btn.active{ background-color: #666666; border: 1px solid #666666; color: #ffffff; }
 .filterDiv{ display: none; }
