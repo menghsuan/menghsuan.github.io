@@ -31,12 +31,15 @@ iframe{ border: 0px; }
 /*------------------------------------*\
                 Layout
 \*------------------------------------*/
-.header{ position: fixed; display: flex; top: 0; left: 0; right: 0; width: 100%; background-color: #ffffff; z-index: 10; }
+.header{ position: fixed; display: flex; top: 0; left: 0; right: 0; width: 100%; background-color: #ffffff; z-index: 10; justify-content: space-between; }
 .header .logo{ }
 .header .logo img{ height: 48px; width: auto; }
-.header .info{ position: absolute; right: 8px; line-height: 50px; font-size: 0.9em; }
+.header .info{ display: flex; margin-right: px; /*line-height: 50px;*/ font-size: 0.9em; align-items: center; }
+.header .info a{ display: inline-block;;margin:0 0.4rem; width: 1.5rem; height: 1.5rem; }
 .header .info a:hover{ color: var( --accent-color ); }
-.header .info .mail{ padding-left: 20px; background: url(images/ic_email.png) left no-repeat; background-size: contain; }
+.header .info .mail{ background: url(images/ic_email.png) left no-repeat; background-size: contain; }
+.header .info .linkedin{ background: url(images/ic_linkedin.png) left no-repeat; background-size: contain; }
+.header .info .instagram{ background: url(images/ic_instagram.png) left no-repeat; background-size: contain; }
 
 
 .wrapper{ padding-top: 48px; }
