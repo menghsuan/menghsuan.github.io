@@ -2,14 +2,18 @@
 :root { 
   --main-color: #000000;
   --accent-color: #666666;
+
+  --font-title: "Playfair Display", serif;
+  --font-title: "Lato", sans-serif;
+  --font-content: "Lato", sans-serif;
 }
 
 /*------------------------------------*\
                 Base
 \*------------------------------------*/
 body{
-  margin: 0; font-family:'Noto Sans TC', Helvetica, Arial, 'Microsoft Yahei','微軟正黑體', 'Microsoft JhengHei', SimSun, STXihei, arial, sans-serif;
-  word-wrap: break-word; font-size: 14px;
+  margin: 0; font-family: "Lato", 'Noto Sans TC', Helvetica, Arial, 'Microsoft Yahei','微軟正黑體', 'Microsoft JhengHei', SimSun, STXihei, arial, sans-serif;
+  word-wrap: break-word; font-size: 16px;
   color: #222222; background-color: #f2f2f2;
   -webkit-user-select: none;
 }
@@ -22,7 +26,7 @@ a { text-decoration: none; color:  var( --main-color ); }
 a:hover,a:focus { text-decoration: none; }
 iframe{ border: 0px; }
 
-.title{ color: var( --main-color ); }
+.title{ color: var( --main-color ); font-family: var(--font-title); }
 .tag{ color: var( --accent-color ); }
 .gray{ color: var( --accent-color ); }
 .link{ }
@@ -53,13 +57,13 @@ iframe{ border: 0px; }
 .filterDiv{ display: none; }
 .show{ display: block; }
 
-.main{ display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 20px; margin: auto; padding: 15px; max-width: 1200px; }
+.main{ display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: 2rem 1.5rem; margin: auto; padding: 1rem; max-width: 1200px; }
 .main .item{ position: relative; }
 .main .item .images { position: relative; width: 100%; height: 240px; overflow: hidden; align-items: center; background-color: #ffffff; }
 .main .item .images img{ object-fit: cover; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 .main .item:hover .images img{ width: 110%; height: 110%; opacity: 80%; transition: all 0.3s ease 0s; }
-.main .item .title{ margin: 0.5rem 0; font-size: 1.15rem; }
-.main .item .tag{ margin: 0.3rem 0; font-size: 0.85rem; }
+.main .item .title{ margin: 0.6rem 0 0.4rem; font-size: 1.3rem; font-weight: 500; }
+.main .item .tag{ margin: 0.3rem 0; font-size: 0.9rem; }
 
 @media screen and (min-width:500px) and (max-width:900px){ 
   .main{ display: grid; grid-template-columns: 1fr 1fr; grid-gap: 15px; padding: 15px; }
@@ -80,7 +84,8 @@ iframe{ border: 0px; }
 .portfolio .info .title{ margin: 0 0 0.4rem 0; padding-right: 40px; font-size: 1.6rem; line-height: 1.4rem; }
 .portfolio .info .tag{ margin: 0.4rem 0 0.8rem; }
 .portfolio .info .time{ position: absolute; top: 0; right: 0; margin: 0; color: var( --accent-color ); }
-.portfolio .info .more{ margin: 0.8rem 0; line-height: 1.4rem; }
+.portfolio .info .more{ margin: 1.4rem 0 1rem 0; line-height: 1.6rem; font-weight: 300; }
+.portfolio .info .more b{ display: inline-block; font-size: 1.1rem; font-weight: 400; }
 .portfolio .info .more a{ color: var( --accent-color ); text-decoration: underline; }
 .portfolio .info .more a:hover{ color: var( --accent-color ); background-color: rgba(102, 102, 102, 0.1); }
 
