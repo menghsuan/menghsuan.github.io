@@ -1,16 +1,24 @@
 
+body{
 
+}
+
+
+/* WooCommerce */
 
 
 /*  Ultimate Member  */
 a.um-button, .um-button{
     border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    -webkit-border-radius: 12px !important;
 }
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
-    color: var(--e-global-color-primary);
-    border:1px solid var(--e-global-color-primary) !important;
+    color: var(--e-global-color-accent);
+    border:1px solid var(--e-global-color-accent) !important;
     background-color: transparent;
+    box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
     background-color: var(--e-global-color-primary);
@@ -18,7 +26,7 @@ a.um-button, .um-button{
 }
 
 #um-submit-btn{
-	background-color:var(--e-global-color-primary);
+	background-color:var(--e-global-color-primary) !important; 
 	color:#ffffff;
 }
 #um-submit-btn:hover{
