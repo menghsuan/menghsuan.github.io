@@ -1,0 +1,24 @@
+
+
+
+
+/*  Ultimate Member  */
+.um-button{
+    border-radius: 12px;
+}
+
+.um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
+    color: var(--e-global-color-primary);
+    border:1px solid var(--e-global-color-primary);
+}
+.um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
+    background: #e5e5e5;
+}
+
+#um-submit-btn{
+	background-color:var(--e-global-color-primary);
+	color:#ffffff;
+}
+#um-submit-btn:hover{
+    background-color: var(--e-global-color-accent):  
+}
