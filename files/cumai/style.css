@@ -15,13 +15,14 @@ a.um-button, .um-button{
 }
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
-    color: var(--e-global-color-accent);
-    border:1px solid var(--e-global-color-accent) !important;
+    color: var(--e-global-color-primary);
+    background-color: var(--e-global-color-primary) !important;
     background-color: transparent;
     box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
-    background-color: var(--e-global-color-primary);
+    color: var(--e-global-color-accent);
+    border:1px solid var(--e-global-color-accent) !important;
     color: #ffffff;
 }
 
