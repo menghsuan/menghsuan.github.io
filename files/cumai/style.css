@@ -3,16 +3,18 @@
 
 
 /*  Ultimate Member  */
-.um-button{
-    border-radius: 12px;
+a.um-button, .um-button{
+    border-radius: 12px !important;
 }
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
     color: var(--e-global-color-primary);
-    border:1px solid var(--e-global-color-primary);
+    border:1px solid var(--e-global-color-primary) !important;
+    background-color: transparent;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
-    background: #e5e5e5;
+    background-color: var(--e-global-color-primary);
+    color: #ffffff;
 }
 
 #um-submit-btn{
@@ -20,5 +22,5 @@
 	color:#ffffff;
 }
 #um-submit-btn:hover{
-    background-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-accent) !important;
 }
