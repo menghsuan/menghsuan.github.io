@@ -7,7 +7,7 @@ body{
 /* WooCommerce */
 
 
-/*  Ultimate Member  */
+/* Ultimate Member */
 a.um-button, .um-button{
     border-radius: 12px !important;
     -moz-border-radius: 12px !important;
@@ -16,14 +16,13 @@ a.um-button, .um-button{
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
     color: var(--e-global-color-primary);
-    background-color: var(--e-global-color-primary) !important;
+    border: var(--e-global-color-primary) !important;
     background-color: transparent;
     box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
     color: var(--e-global-color-accent);
     border:1px solid var(--e-global-color-accent) !important;
-    color: #ffffff;
 }
 
 #um-submit-btn{
