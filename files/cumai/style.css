@@ -16,7 +16,7 @@ a.um-button, .um-button{
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
     color: var(--e-global-color-primary);
-    border: var(--e-global-color-primary) !important;
+    border:1px solid var(--e-global-color-primary) !important;
     background-color: transparent;
     box-shadow: none;
 }
