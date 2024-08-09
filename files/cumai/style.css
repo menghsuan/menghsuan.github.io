@@ -50,9 +50,9 @@ a.um-button, .um-button{
 }
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
-    color: var(--c-primary);
+    color: var(--c-primary) !important;
     border:1px solid var(--c-primary) !important;
-    background-color: transparent;
+    background-color: transparent !important;
     box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
