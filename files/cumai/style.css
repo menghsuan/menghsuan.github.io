@@ -92,7 +92,9 @@ a.um-button, .um-button{
     color: #ffffff;
     background-color: var(--c-primary);
 }
-.um-account-side li a.current span.um-account-icon{ color: #ffffff; }
+.um-account-side li a.current span.um-account-icon,
+.um-account-side li a.current:hover span.um-account-icon{ color: #ffffff; }
+
 .um-account-side li a.current span.um-account-title{ color: #ffffff; }
 
 
@@ -114,8 +116,10 @@ a.um-button, .um-button{
     padding: 16px 30px;
     padding-left: var(--tab-content-spacing, 6%);
 }
+.um-account-main div.um-account-heading{ font-size: 1.5rem; }
 .um-account-main a {
-    border-bottom: 1px !important; 
+    border-bottom: 1px solid !important;
+    border-radius: 12px; 
 }
 
 .um-field .select2.select2-container .select2-selection, 
