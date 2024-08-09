@@ -38,6 +38,11 @@ a.um-button, .um-button{
     background-color: var(--c-primary-dark) !important;
 }
 
+.um-request-button{
+  background-color: transparent;
+  color: var(--c-primary-dark);
+  border: 1px solid var(--c-primary-dark);
+}
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
     color: var(--c-primary);
@@ -74,17 +79,18 @@ a.um-button, .um-button{
 .um-account-side li a{ padding: 0.5rem 1rem; font-size: 1.1rem; color: var(--c-primary-dark); }
 .um-account-side li a:hover{ background: var(--c-white-dark); }
 
+.um-account-side li a span.um-account-icon{ color: var(--c-primary-dark); }
+.um-account-side li a span.um-account-title { padding-left: 0; color: var(--c-primary-dark); }
 
-.um-account-side li a.current, .um-account-side li a.current:hover {
+
+.um-account-side li a.current, 
+.um-account-side li a.current:hover {
     color: #ffffff;
     background-color: var(--c-primary);
 }
-.um-account-side li a span.um-account-icon{ color: var(--c-primary-dark); }
 .um-account-side li a.current span.um-account-icon{ color: #ffffff; }
+.um-account-side li a.current span.um-account-title{ color: #ffffff; }
 
-.um-account-side li a span.um-account-title { color: #ffffff; }
-
-.um-account-side li a span.um-account-title { padding-left: 0; }
 
 .um-account-side li a span.um-account-icon,
 .um-account-side li a.current span.um-account-icon, 
@@ -99,6 +105,12 @@ a.um-button, .um-button{
 
 /* right-main */
 .um-account-main{
-    padding-left: var(--tab-content-spacing, 6%);
+    margin-left: var(--tab-content-spacing, 6%);
     border: 1px solid var(--c-white-dark);
+    padding: 16px 30px;
+}
+.um-field .select2.select2-container .select2-selection, 
+.um-search-filter .select2.select2-container .select2-selection{
+    border: 1px solid #dddddd !important;
+    border-radius: 12px;
 }
