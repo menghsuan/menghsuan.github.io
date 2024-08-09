@@ -115,7 +115,7 @@ a.um-button, .um-button{
     padding-left: var(--tab-content-spacing, 6%);
 }
 .um-account-main a {
-    border-bottom: inherit !important; 
+    border-bottom: 1px !important; 
 }
 
 .um-field .select2.select2-container .select2-selection, 
