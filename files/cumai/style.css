@@ -67,6 +67,8 @@ a.um-button, .um-button{
 }
 
 /*** um-account UM帳戶 ***/
+.um-account{ }
+.um-account::after{ clear: both; }
 
 /* left side */
 .um-account-side{
