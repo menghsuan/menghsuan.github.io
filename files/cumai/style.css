@@ -1,4 +1,13 @@
 
+:root {
+  --c-primary: #E5A15C;
+  --c-primary-dark: #663D14;
+  --c-secondary: #1E2A4C;
+  --c-secondary-dark: #0A1126;
+  --c-white: #FEFAF1;
+  --c-white-dark: #F8F0DF;
+}
+
 body{
 
 }
@@ -14,37 +23,37 @@ a.um-button, .um-button{
     -webkit-border-radius: 12px !important;
 }
 .um .um-button{
-    background-color:var(--e-global-color-primary) !important; 
+    background-color:var(--c-primary) !important; 
 	color:#ffffff !important; 
 }
 .um .um-button:hover{
-    background-color: var(--e-global-color-accent) !important;
+    background-color: var(--c-primary-dark) !important;
 }
 
 #um-submit-btn{
-	background-color:var(--e-global-color-primary) !important; 
+	background-color:var(--c-primary) !important; 
 	color:#ffffff;
 }
 #um-submit-btn:hover{
-    background-color: var(--e-global-color-accent) !important;
+    background-color: var(--c-primary-dark) !important;
 }
 
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
-    color: var(--e-global-color-primary);
-    border:1px solid var(--e-global-color-primary) !important;
+    color: var(--c-primary);
+    border:1px solid var(--c-primary) !important;
     background-color: transparent;
     box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
-    color: var(--e-global-color-accent);
-    border:1px solid var(--e-global-color-accent) !important;
+    color: var(--c-primary-dark);
+    border:1px solid var(--c-primary-darkt) !important;
 }
 
 
-/* um-login */
+/*** um-login UM登入 ***/
 .um-misc-with-img{ 
-    border-bottom: 2px solid #F8F0DF;
+    border-bottom: 2px solid var(--c-white-dark);
 }
 .um-misc-ul { padding: 0; }
 .um-misc-ul li{ 
@@ -52,6 +61,21 @@ a.um-button, .um-button{
     padding: 0; text-align: center; 
 }
 
+/*** um-account UM帳戶 ***/
 
+/* left side */
+.um-account-side{
+ border: 1px solid var(--c-white-dark);  
+}
 
+.um-account-side li { margin-bottom: 0px !important; background-color: var(--c-white); border-top: 1px solid var(--c-white-dark); }
+.um-account-side li a{ padding: 0.5rem 1rem; font-size: 1.1rem; color: var(--c-primary-dark); }
+.um-account-side li a.current, .um-account-side li a.current:hover {
+    color: #ffffff;
+    background-color: var(--c-primary);
+}
+.um-account-side li a span.um-account-icon,.um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon {
+    border-right: 0px;
+}
+.um-account-meta{ margin-top: 20px; }
 
