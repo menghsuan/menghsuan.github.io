@@ -68,7 +68,7 @@ a.um-button, .um-button{
 
 /*** um-account UM帳戶 ***/
 .um-account{ }
-.um-account::after{ clear: both; }
+.um-account .um-form::after{ clear: both; }
 
 /* left side */
 .um-account-side{
@@ -107,9 +107,10 @@ a.um-button, .um-button{
 
 /* right-main */
 .um-account-main{
-    margin-left: var(--tab-content-spacing, 6%);
-    border: 1px solid var(--c-white-dark);
+    /*margin-left: var(--tab-content-spacing, 6%);*/
+    /*border: 1px solid var(--c-white-dark);*/
     padding: 16px 30px;
+    padding-left: var(--tab-content-spacing, 6%);
 }
 .um-field .select2.select2-container .select2-selection, 
 .um-search-filter .select2.select2-container .select2-selection{
