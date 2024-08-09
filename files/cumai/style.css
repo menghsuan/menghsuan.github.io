@@ -56,7 +56,7 @@ a.um-button, .um-button{
     box-shadow: none;
 }
 .um .um-button.um-alt:hover, .um input[type=submit].um-button.um-alt:hover {
-    color: var(--c-primary-dark);
+    color: var(--c-primary-dark) !important;
     border:1px solid var(--c-primary-darkt) !important;
 }
 .um .um-field-radio.active:not(.um-field-radio-state-disabled) i{ color: var(--c-primary); }
