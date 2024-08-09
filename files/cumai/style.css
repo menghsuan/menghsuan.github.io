@@ -67,15 +67,38 @@ a.um-button, .um-button{
 .um-account-side{
  border: 1px solid var(--c-white-dark);  
 }
+.um-account-meta{ margin-top: 20px; }
 
+/* left-menu */
 .um-account-side li { margin-bottom: 0px !important; background-color: var(--c-white); border-top: 1px solid var(--c-white-dark); }
 .um-account-side li a{ padding: 0.5rem 1rem; font-size: 1.1rem; color: var(--c-primary-dark); }
+.um-account-side li a:hover{ background: var(--c-white-dark); }
+
+
 .um-account-side li a.current, .um-account-side li a.current:hover {
     color: #ffffff;
     background-color: var(--c-primary);
 }
-.um-account-side li a span.um-account-icon,.um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon {
+.um-account-side li a span.um-account-icon{ color: var(--c-primary-dark); }
+.um-account-side li a.current span.um-account-icon{ color: #ffffff; }
+
+.um-account-side li a span.um-account-title { color: #ffffff; }
+
+.um-account-side li a span.um-account-title { padding-left: 0; }
+
+.um-account-side li a span.um-account-icon,
+.um-account-side li a.current span.um-account-icon, 
+.um-account-side li a.current:hover span.um-account-icon {
     border-right: 0px;
 }
-.um-account-meta{ margin-top: 20px; }
 
+
+
+
+
+
+/* right-main */
+.um-account-main{
+    padding-left: var(--tab-content-spacing, 6%);
+    border: 1px solid var(--c-white-dark);
+}
