@@ -43,6 +43,11 @@ a.um-button, .um-button{
   color: var(--c-primary-dark);
   border: 1px solid var(--c-primary-dark);
 }
+.um-request-button:hover {
+    background-color: var(--c-primary);
+    border: 1px solid var(--c-primary);
+    color: #ffffff;
+}
 
 .um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
     color: var(--c-primary);
@@ -54,7 +59,7 @@ a.um-button, .um-button{
     color: var(--c-primary-dark);
     border:1px solid var(--c-primary-darkt) !important;
 }
-
+.um .um-field-radio.active:not(.um-field-radio-state-disabled) i{ color: var(--c-primary); }
 
 /*** um-login UM登入 ***/
 .um-misc-with-img{ 
@@ -67,9 +72,6 @@ a.um-button, .um-button{
 }
 
 /*** um-account UM帳戶 ***/
-.um-account{ }
-.um-account .um-form::after{ clear: both; }
-
 /* left side */
 .um-account-side{
  border: 1px solid var(--c-white-dark);  
@@ -112,8 +114,13 @@ a.um-button, .um-button{
     padding: 16px 30px;
     padding-left: var(--tab-content-spacing, 6%);
 }
+.um-account-main a {
+    border-bottom: inherit !important; 
+}
+
 .um-field .select2.select2-container .select2-selection, 
 .um-search-filter .select2.select2-container .select2-selection{
     border: 1px solid #dddddd !important;
-    border-radius: 12px;
+    border-radius: 12px !important;
 }
+.um-field > label{ width: 100%; }
