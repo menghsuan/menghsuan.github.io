@@ -33,6 +33,7 @@ a.um-button, .um-button{
 #um-submit-btn{
 	background-color:var(--c-primary) !important; 
 	color:#ffffff;
+    font-size: 1rem;
 }
 #um-submit-btn:hover{
     background-color: var(--c-primary-dark) !important;
@@ -69,6 +70,10 @@ a.um-button, .um-button{
 .um-misc-ul li{ 
     list-style: none; line-height: 2; font-size: 1rem;
     padding: 0; text-align: center; 
+}
+
+div.uimob500 .um-field-half {
+  float: left;
 }
 
 /*** um-account UM帳戶 ***/
