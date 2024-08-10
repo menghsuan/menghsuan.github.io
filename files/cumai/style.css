@@ -133,3 +133,12 @@ div.uimob500 .um-field-half {
     border-radius: 12px !important;
 }
 .um-field > label{ width: 100%; }
+
+
+
+
+
+
+.wpdiscuz-textarea-wrap .wpd-avatar{ display: none; }
+#wpdcom .ql-container { border-radius: 12px 12px 0 0; }
+#wpdcom .ql-toolbar { border-radius: 0 0 12px 12px; }
