@@ -140,11 +140,14 @@ div.uimob500 .um-field-half {
 
 /** wpDiscuz **/
 #wpdcom .wpd-auth .wpd-login a { color: var(--c-primary); }
+#wpdcom .wpd-auth .wpd-login a:hover { color: var(--c-primary-dark); }
+
 .wpdiscuz-textarea-wrap .wpd-avatar{ display: none; }
 #wpdcom .ql-container { border-radius: 12px 12px 0 0; }
 #wpdcom .ql-toolbar { border-radius: 0 0 12px 12px; }
 
+#wpdcom .wpd_label__check i.wpdicon { border-radius: 12px; }
 #wpdcom .wpd-second-button, #wpdcom .wpd-prim-button { padding: 10px 20px; border-radius: 12px; line-height: 1; box-shadow: none; }
 #wpdcom .wpd-second-button:hover, #wpdcom .wpd-prim-button:hover { background-color: var(--c-primary-dark); }
 #wpdcom .wpd-second-button{ border: 1px solid var(--c-primary); color: var(--c-primary); background-color: transparent; }
-#wpdcom .wpd-second-button{ border: 1px solid var(--c-primary-dark); color: var(--c-primary-dark); }
+#wpdcom .wpd-second-button{ border: 1px solid var(--c-primary-dark); color: var(--c-primary-dark); background-color: transparent; }
