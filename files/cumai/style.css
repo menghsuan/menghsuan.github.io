@@ -13,6 +13,13 @@ body{
 }
 
 
+/** **/
+.elementor-price-table{ display: flex; flex-direction: column; height: inherit; }
+.elementor-price-table .elementor-price-table__footer{ margin-top: auto; }
+
+
+
+
 /* WooCommerce */
 
 
