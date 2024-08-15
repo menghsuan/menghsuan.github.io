@@ -20,8 +20,14 @@ body{
 /* safari orz */
 .elementor-136 .elementor-element.elementor-element-5c5b7767 img{ width: auto !important; }
 
+/* price table */
 .column-1{ width: 20%; } 
 .column-2,.column-3, .column-4{ width: calc( 80% / 3 ); }  
+
+body.elementor-page-700:not(.elementor-motion-effects-element-type-background), 
+body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motion-effects-layer { 
+    background-color: var(--c-secondary);
+}
 
 /* WooCommerce */
 
@@ -58,6 +64,14 @@ body{
 .woocommerce-error{border-top-color:#b81c23}
 .woocommerce-error::before{content:"\e016";color:#b81c23}
 */
+
+.woocommerce-MyAccount-content-wrapper{ background-color: #ffffff; border: 1px solid var(--c-white-dark); }
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button {
+    background: var(--c-primary);
+    border-radius: 12px;
+    border: 2px var(--c-primary);
+    color: #ffffff;
+}
 
 /* Ultimate Member */
 a.um-button, .um-button{
