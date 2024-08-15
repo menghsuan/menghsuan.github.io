@@ -67,11 +67,21 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     border: 2px var(--c-primary) !important;
     color: #ffffff !important;
 }
-.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h2,
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h3{
     margin-top: 0.6rem;
     margin-bottom: 1rem;
 }
+
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h2{
+  margin-top: 2rem; margin-bottom: 1rem;
+}
+
+.woocommerce table.shop_table{
+    border: 0px; border-bottom: 1px solid #d5d8dc;
+}
+
+
+
 
 /* Ultimate Member */
 a.um-button, .um-button{
