@@ -58,8 +58,8 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     border: 1px solid var(--c-primary) !important;
 }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover {
-   background-color: var(--c-primary) !important;
-   color: #ffffff !important;
+   /*background-color: var(--c-primary) !important;*/
+   color: var(--c-primary-dark) !important;
 }
 
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button {
