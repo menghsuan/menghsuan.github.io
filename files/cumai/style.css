@@ -42,11 +42,13 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce-info{ border-left-color:#1e85be; }
 .woocommerce-error{ border-left-color:#b81c23; }
 
+/* 回商店按鈕 */
 .woocommerce .return-to-shop .button.wc-backward{
     border: 1px solid var(--c-primary);
     color: var(--c-primary);
     background-color: transparent;
 }
+.woocommerce .return-to-shop .button.wc-backward:hover{ border: 1px solid var(--c-primary-dark); color: var(--c-primary-dark); }
 
 /* 未登入需求頁提示 */
 .elementor-post__card .woocommerce-info{ 
@@ -59,9 +61,13 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
   border: 1px solid var(--c-primary) !important;
   color: var(--c-primary) !important;
 }
+.button.wc-forward:hover{
+  border: 1px solid var(--c-primary-dark) !important;
+  color: var(--c-primary-dark) !important;
+}
 
 /* MyAccount */
-.woocommerce-MyAccount-content-wrapper{ padding: 16px 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
+.woocommerce-MyAccount-content-wrapper{ padding: 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
 
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
     background-color: transparent;
