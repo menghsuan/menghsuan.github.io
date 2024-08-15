@@ -18,7 +18,7 @@ body{
 .elementor-price-table .elementor-price-table__footer{ margin-top: auto; }
 
 /* safari orz */
-.elementor-136 .elementor-element.elementor-element-5c5b7767 img{ width: auto; }
+.elementor-136 .elementor-element.elementor-element-5c5b7767 img{ width: auto !important; }
 
 
 /* WooCommerce */
