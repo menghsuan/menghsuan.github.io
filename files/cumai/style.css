@@ -60,15 +60,14 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce .woocommerce-info .button{
   border: 1px solid var(--c-primary) !important;
   color: var(--c-primary) !important;
+  border-radius: 12px;
 }
-.button.wc-forward:hover{
-  border: 1px solid var(--c-primary-dark) !important;
-  color: var(--c-primary-dark) !important;
-}
+.woocommerce .woocommerce-info .button.wc-forward:hover{ border: 1px solid var(--c-primary-dark) !important; color: var(--c-primary-dark) !important; }
+
 
 /* MyAccount */
 .woocommerce-MyAccount-content-wrapper{ padding: 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
-
+.woocommerce .woocommerce-MyAccount-navigation ul li { background-color: #ffffff; }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
     background-color: transparent;
 }
