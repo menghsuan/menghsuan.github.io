@@ -22,6 +22,35 @@ body{
 
 /* WooCommerce */
 
+/* message style */
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+    background-color: #ffffff;
+    border-top: none;
+    border: 1px solid #cccccc;
+    border-left: 3px solid;
+    /*box-shadow: 0px 0px 1px #cccccc;*/
+}
+.woocommerce-message{ border-top-color: inherit; border-left-color:#8fae1b; }
+.woocommerce-info{ border-top-color: inherit; border-left-color:#1e85be; }
+.woocommerce-error{ border-top-color: inherit; border-left-color:#b81c23; }
+
+
+/*
+.woocommerce-error,.woocommerce-info,.woocommerce-message{padding:1em 2em 1em 3.5em;margin:0 0 2em;position:relative;background-color:#f6f5f8;color:#515151;border-top:3px solid #7f54b3;list-style:none outside;width:auto;word-wrap:break-word}
+.woocommerce-error::after,.woocommerce-error::before,.woocommerce-info::after,.woocommerce-info::before,.woocommerce-message::after,.woocommerce-message::before{content:" ";display:table}
+.woocommerce-error::after,.woocommerce-info::after,.woocommerce-message::after{clear:both}
+.woocommerce-error::before,.woocommerce-info::before,.woocommerce-message::before{font-family:WooCommerce;content:"\e028";display:inline-block;position:absolute;top:1em;left:1.5em}
+.woocommerce-error .button,.woocommerce-info .button,.woocommerce-message .button{float:right}
+.woocommerce-error li,.woocommerce-info li,.woocommerce-message li{list-style:none outside!important;padding-left:0!important;margin-left:0!important}
+.rtl.woocommerce .price_label,.rtl.woocommerce .price_label span{direction:ltr;unicode-bidi:embed}
+
+.woocommerce-message{border-top-color:#8fae1b}
+.woocommerce-message::before{content:"\e015";color:#8fae1b}
+.woocommerce-info{border-top-color:#1e85be}
+.woocommerce-info::before{color:#1e85be}
+.woocommerce-error{border-top-color:#b81c23}
+.woocommerce-error::before{content:"\e016";color:#b81c23}
+*/
 
 /* Ultimate Member */
 a.um-button, .um-button{
