@@ -42,12 +42,17 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce-info{ border-left-color:#1e85be; }
 .woocommerce-error{ border-left-color:#b81c23; }
 
+/* 未登入需求頁提示 */
 .elementor-post__card .woocommerce-info{ 
     background-color: #f6f5f8;
     border: 1px solid #1e85be;
     box-shadow: none;
 }
 
+.woocommerce .woocommerce-info .button{
+  border: 1px solid var(--c-primary) !important;
+  color: var(--c-primary) !important;
+}
 
 /* MyAccount */
 .woocommerce-MyAccount-content-wrapper{ padding: 16px 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
