@@ -45,7 +45,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
     color: var(--c-primary);
     background-color: transparent;
-    border: 1px solid var(--c-primary);
+    /*border: 1px solid var(--c-primary);*/
 }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover {
    background-color: var(--c-primary);
@@ -71,15 +71,18 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     margin-top: 0.6rem;
     margin-bottom: 1rem;
 }
-
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h2{
-  margin-top: 2rem; margin-bottom: 1rem;
+  margin-top: 2rem !important; margin-bottom: 1rem !important;
 }
+
 
 .woocommerce table.shop_table{
     border: 0px; border-bottom: 1px solid #d5d8dc;
 }
-
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number>a,
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .product-name a{
+    color: var(--c-primary);
+}
 
 
 
