@@ -35,7 +35,8 @@ body{
 
 .elementor-post__card .woocommerce-info{ 
     background-color: #f6f5f8;
-    border: 1px solid #1e85be;;
+    border: 1px solid #1e85be;
+    box-shadow: none;
 }
 
 /*
