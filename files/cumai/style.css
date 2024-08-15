@@ -25,14 +25,13 @@ body{
 /* message style */
 .woocommerce-error, .woocommerce-info, .woocommerce-message {
     background-color: #ffffff;
-    border-top: none;
-    border: 1px solid #cccccc;
+    border: none;
     border-left: 3px solid;
-    /*box-shadow: 0px 0px 1px #cccccc;*/
+    box-shadow: 0 1px #ccc, 0 -1px #ccc, 1px 0 #ccc;
 }
-.woocommerce-message{ border-top-color: inherit; border-left-color:#8fae1b; }
-.woocommerce-info{ border-top-color: inherit; border-left-color:#1e85be; }
-.woocommerce-error{ border-top-color: inherit; border-left-color:#b81c23; }
+.woocommerce-message{ border-left-color:#8fae1b; }
+.woocommerce-info{ border-left-color:#1e85be; }
+.woocommerce-error{ border-left-color:#b81c23; }
 
 
 /*
