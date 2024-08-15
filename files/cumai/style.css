@@ -20,6 +20,8 @@ body{
 /* safari orz */
 .elementor-136 .elementor-element.elementor-element-5c5b7767 img{ width: auto !important; }
 
+.column-1{ width: 20%; } 
+.column-2,.column-3, .column-4{ width: calc( 80% / 3 ); }  
 
 /* WooCommerce */
 
