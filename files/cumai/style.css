@@ -48,30 +48,15 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     box-shadow: none;
 }
 
-/*
-.woocommerce-error,.woocommerce-info,.woocommerce-message{padding:1em 2em 1em 3.5em;margin:0 0 2em;position:relative;background-color:#f6f5f8;color:#515151;border-top:3px solid #7f54b3;list-style:none outside;width:auto;word-wrap:break-word}
-.woocommerce-error::after,.woocommerce-error::before,.woocommerce-info::after,.woocommerce-info::before,.woocommerce-message::after,.woocommerce-message::before{content:" ";display:table}
-.woocommerce-error::after,.woocommerce-info::after,.woocommerce-message::after{clear:both}
-.woocommerce-error::before,.woocommerce-info::before,.woocommerce-message::before{font-family:WooCommerce;content:"\e028";display:inline-block;position:absolute;top:1em;left:1.5em}
-.woocommerce-error .button,.woocommerce-info .button,.woocommerce-message .button{float:right}
-.woocommerce-error li,.woocommerce-info li,.woocommerce-message li{list-style:none outside!important;padding-left:0!important;margin-left:0!important}
-.rtl.woocommerce .price_label,.rtl.woocommerce .price_label span{direction:ltr;unicode-bidi:embed}
 
-.woocommerce-message{border-top-color:#8fae1b}
-.woocommerce-message::before{content:"\e015";color:#8fae1b}
-.woocommerce-info{border-top-color:#1e85be}
-.woocommerce-info::before{color:#1e85be}
-.woocommerce-error{border-top-color:#b81c23}
-.woocommerce-error::before{content:"\e016";color:#b81c23}
-*/
-
-.woocommerce-MyAccount-content-wrapper{ background-color: #ffffff; border: 1px solid var(--c-white-dark); }
+.woocommerce-MyAccount-content-wrapper{ padding: 16px 30px; background-color: #ffffff; border: 1px solid var(--c-white-dark); }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button {
-    background: var(--c-primary);
-    border-radius: 12px;
-    border: 2px var(--c-primary);
-    color: #ffffff;
+    background: var(--c-primary) !important;
+    border-radius: 12px !important;
+    border: 2px var(--c-primary) !important;
+    color: #ffffff !important;
 }
+
 
 /* Ultimate Member */
 a.um-button, .um-button{
