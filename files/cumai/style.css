@@ -58,9 +58,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce-MyAccount-content-wrapper{ padding: 16px 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
 
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
-    color: var(--c-primary) !important;
     background-color: transparent;
-    border: 1px solid var(--c-primary) !important;
 }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover {
    /*background-color: var(--c-primary) !important;*/
