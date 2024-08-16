@@ -125,6 +125,8 @@ table.my_account_orders.my_account_memberships.my_membership_settings{ }
         flex-direction: row;
     }
     .my-membership-detail-user-membership-status td:first-child{ flex: 1; text-align: left !important; }
+    .my-membership-detail-user-membership-status td{ flex: 1; }
+
 
     .my-membership-detail-user-membership-status td,
     .my-membership-detail-user-membership-start-date td,
