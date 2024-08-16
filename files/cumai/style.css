@@ -104,8 +104,8 @@ table.my_account_memberships{ border-bottom: 0px;}
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
     .woocommerce table.shop_table_responsive tr td.order-actions, .woocommerce-page table.shop_table_responsive tr td.order-actions{ text-align: right !important; }
-    a.wcs_block_ui_on_click{ margin: 4px; }
-    a.subscription_renewal_early{ margin: 4px; }
+    a.wcs_block_ui_on_click{ margin: 4px !important; }
+    a.subscription_renewal_early{ margin: 4px !important; }
     .woocommerce-Address .woocommerce-Address-title h3{ margin-top: 1.5rem; }
 }
 @media screen and (min-width:769px){
