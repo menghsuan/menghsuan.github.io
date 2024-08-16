@@ -67,6 +67,8 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 
 /* MyAccount */
 .woocommerce-MyAccount-content-wrapper{ padding: 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
+.woocommerce-MyAccount-content-wrapper h2{ margin-top: 2rem !important; margin-bottom: 1rem !important; }
+
 .woocommerce .woocommerce-MyAccount-navigation ul li { background-color: #ffffff; }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
     background-color: transparent;
@@ -82,13 +84,9 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     border: 2px var(--c-primary) !important;
     color: #ffffff !important;
 }
-.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h3{
-    margin-top: 0.6rem;
-    margin-bottom: 1rem;
-}
-.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h2{
-  margin-top: 2rem !important; margin-bottom: 1rem !important;
-}
+ 
+
+.woocommerce-Address .woocommerce-Address-title h3{ margin-bottom: 1rem; }
 
 
 .woocommerce table.shop_table{
@@ -99,7 +97,12 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     color: var(--c-primary) !important;
 }
 
+.membership-content-excerpt{ height: 1,5em;}
 
+@media screen and (min-width:769px){
+.membership-content-excerpt{ width: 30%; } 
+.membership-content-actions{ width: 10%; text-align: right; }
+}
 
 /* Ultimate Member */
 a.um-button, .um-button{
