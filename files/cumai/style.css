@@ -106,13 +106,24 @@ table.my_account_memberships{ border-bottom: 0px;}
     .woocommerce table.shop_table_responsive tr td.order-actions, .woocommerce-page table.shop_table_responsive tr td.order-actions{ text-align: right !important; }
     a.wcs_block_ui_on_click{ margin: 4px !important; }
     a.subscription_renewal_early{ margin: 4px !important; }
-    .woocommerce-Address .woocommerce-Address-title h3{ margin-top: 1.5rem; }
+    .woocommerce-Address .woocommerce-Address-title h3{ margin-top: 1.5rem !important; }
 }
 @media screen and (min-width:769px){
     .membership-content-excerpt{ width: 30%; } 
     .membership-content-actions{ width: 10%; }
 }
 
+/* 我的帳戶 > membership > Manage */
+table.my_account_orders.my_account_memberships.my_membership_settings{ }
+@media screen and (max-width: 768px) {
+    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+        display: table-cell !important;
+        text-align: left !important;
+    }
+    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td::before{
+        display: none !important;
+    }
+}
 
 /** Ultimate Member **/
 a.um-button, .um-button{
