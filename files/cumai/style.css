@@ -116,14 +116,22 @@ table.my_account_memberships{ border-bottom: 0px;}
 /* 我的帳戶 > membership > Manage */
 table.my_account_orders.my_account_memberships.my_membership_settings{ }
 @media screen and (max-width: 768px) {
-    tr.my-membership-detail-user-membership-status td {
+    .my-membership-detail-user-membership-status td,
+    .my-membership-detail-user-membership-start-date td,
+    .my-membership-detail-user-membership-expires td,
+    .my-membership-detail-user-membership-next-bill-on td,
+    .my-membership-detail-user-membership-actions td{
         display: table-cell !important;
         text-align: left !important;
-    } 
-    tr.my-membership-detail-user-membership-status td::before{
+    }
+    .my-membership-detail-user-membership-status td::before,
+    .my-membership-detail-user-membership-start-date td::before,
+    .my-membership-detail-user-membership-expires td::before,
+    .my-membership-detail-user-membership-next-bill-on td::before,
+    .my-membership-detail-user-membership-actions td::before{
         display: none !important;
     }
-    
+    /*my-membership-detail-user-membership-status/
 }
 
 /** Ultimate Member **/
