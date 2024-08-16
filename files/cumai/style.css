@@ -90,7 +90,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 
 
 .woocommerce table.shop_table{
-    border: 0px; border-bottom: 1px solid #d5d8dc;
+    border: 0px; border-bottom: 0px solid #d5d8dc;
 }
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number>a,
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .product-name a{
@@ -103,6 +103,8 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .membership-content-excerpt{ height: 1,5em;}
 .membership-content-actions{ text-align: right; }
 table.my_account_memberships{ border-bottom: 0px;}
+.woocommerce-MyAccount-subscriptions { padding: 16px 30px 3px 30px; border: 1px solid var(--c-white-dark); }
+.woocommerce-orders-table--subscriptions
 
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
