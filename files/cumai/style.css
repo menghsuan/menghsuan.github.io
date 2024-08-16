@@ -116,13 +116,14 @@ table.my_account_memberships{ border-bottom: 0px;}
 /* 我的帳戶 > membership > Manage */
 table.my_account_orders.my_account_memberships.my_membership_settings{ }
 @media screen and (max-width: 768px) {
-    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td {
+    tr.my-membership-detail-user-membership-status td {
         display: table-cell !important;
         text-align: left !important;
-    }
-    .woocommerce table.shop_table_responsive tr td, .woocommerce-page table.shop_table_responsive tr td::before{
+    } 
+    tr.my-membership-detail-user-membership-status td::before{
         display: none !important;
     }
+    
 }
 
 /** Ultimate Member **/
