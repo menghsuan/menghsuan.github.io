@@ -97,11 +97,16 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
     color: var(--c-primary) !important;
 }
 
+/* membership */
+.my-membership-section table.shop_table td{ min-height: 40px; }
+.membership-content{ }
 .membership-content-excerpt{ height: 1,5em;}
+.membership-content-actions{ text-align: right; }
 
 @media screen and (min-width:769px){
-.membership-content-excerpt{ width: 30%; } 
-.membership-content-actions{ width: 10%; text-align: right; }
+    .membership-content{ margin: 0.6rem 0; }
+    .membership-content-excerpt{ width: 30%; } 
+    .membership-content-actions{ width: 10%; }
 }
 
 /* Ultimate Member */
