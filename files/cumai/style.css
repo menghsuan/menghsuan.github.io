@@ -108,6 +108,7 @@ table.my_account_memberships{ border-bottom: 0px;}
 
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
+    .woocommerce table.shop_table_responsive tr td.order-actions, .woocommerce-page table.shop_table_responsive tr td.order-actions{ text-align: right !important; }
 }
 @media screen and (min-width:769px){
     .membership-content-excerpt{ width: 30%; } 
