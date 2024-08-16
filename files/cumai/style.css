@@ -102,7 +102,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .membership-content{  }
 .membership-content-excerpt{ height: 1,5em;}
 .membership-content-actions{ text-align: right; }
-.shop_table.my_account_memberships{ border-bottom: 0px;}
+table.my_account_memberships{ border-bottom: 0px;}
 
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
