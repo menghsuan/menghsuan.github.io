@@ -70,13 +70,8 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce-MyAccount-content-wrapper h2{ margin-top: 2rem !important; margin-bottom: 1rem !important; }
 
 .woocommerce .woocommerce-MyAccount-navigation ul li { background-color: #ffffff; }
-.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
-    background-color: transparent;
-}
-.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover {
-   /*background-color: var(--c-primary) !important;*/
-   color: var(--c-primary-dark) !important;
-}
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a { background-color: transparent;}
+.elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover { color: var(--c-primary-dark) !important; }
 
 .elementor-widget-woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button {
     background: var(--c-primary) !important;
@@ -86,7 +81,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 }
  
 
-.woocommerce-Address .woocommerce-Address-title h3{ margin-bottom: 1rem !important; }
+.woocommerce-Address .woocommerce-Address-title h3{ margin-bottom: 1rem !important;  }
 
 
 .woocommerce table.shop_table{
@@ -109,6 +104,9 @@ table.my_account_memberships{ border-bottom: 0px;}
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
     .woocommerce table.shop_table_responsive tr td.order-actions, .woocommerce-page table.shop_table_responsive tr td.order-actions{ text-align: right !important; }
+    a.wcs_block_ui_on_click{ margin: 4px; }
+    a.subscription_renewal_early{ margin: 4px; }
+    .woocommerce-Address .woocommerce-Address-title h3{ margin-top: 1.5rem; }
 }
 @media screen and (min-width:769px){
     .membership-content-excerpt{ width: 30%; } 
