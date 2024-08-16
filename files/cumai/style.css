@@ -121,7 +121,7 @@ table.my_account_orders.my_account_memberships.my_membership_settings{ }
     .my-membership-detail-user-membership-expires,
     .my-membership-detail-user-membership-next-bill-on,
     .my-membership-detail-user-membership-actions{
-        display: flex;
+        display: flex !important;
         flex-direction: row;
     }
     .my-membership-detail-user-membership-status td:first-child{ flex: 1; text-align: left !important; }
