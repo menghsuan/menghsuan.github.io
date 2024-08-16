@@ -86,7 +86,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 }
  
 
-.woocommerce-Address .woocommerce-Address-title h3{ margin-bottom: 1rem; }
+.woocommerce-Address .woocommerce-Address-title h3{ margin-bottom: 1rem !important; }
 
 
 .woocommerce table.shop_table{
@@ -114,7 +114,8 @@ table.my_account_memberships{ border-bottom: 0px;}
     .membership-content-actions{ width: 10%; }
 }
 
-/* Ultimate Member */
+
+/** Ultimate Member **/
 a.um-button, .um-button{
     border-radius: 12px !important;
     -moz-border-radius: 12px !important;
