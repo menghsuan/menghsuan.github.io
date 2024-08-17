@@ -103,6 +103,8 @@ table.my_account_memberships{ border-bottom: 0px;}
 
 /* order page */
 .woocommerce-orders-table__cell-order-actions a.woocommerce-button{ margin: 4px !important; }
+.woocommerce-orders-table__cell-order-actions a.woocommerce-button:first-child{ margin-left: 0px !important; }
+.woocommerce-orders-table__cell-order-actions a.woocommerce-button:last-child{ margin-right: 0px !important; }
 
 
 @media screen and (max-width:768px){
