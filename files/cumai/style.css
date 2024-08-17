@@ -65,7 +65,7 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 .woocommerce .woocommerce-info .button.wc-forward:hover{ border: 1px solid var(--c-primary-dark) !important; color: var(--c-primary-dark) !important; }
 
 
-/* MyAccount */
+/** MyAccount **/
 .woocommerce-MyAccount-content-wrapper{ padding: 30px !important; background-color: #ffffff; border: 1px solid var(--c-white-dark) !important; }
 .woocommerce-MyAccount-content-wrapper h2{ margin-top: 2rem !important; margin-bottom: 1rem !important; }
 
@@ -100,6 +100,10 @@ body.elementor-page-700 > .elementor-motion-effects-container > .elementor-motio
 table.my_account_memberships{ border-bottom: 0px;}
 .woocommerce-MyAccount-subscriptions { padding: 16px 30px 3px 30px; border: 1px solid var(--c-white-dark); }
 .woocommerce-orders-table--subscriptions{ }
+
+/* order page */
+.woocommerce-orders-table__cell-order-actions a.woocommerce-button{ margin: 4px !important; }
+
 
 @media screen and (max-width:768px){
     .membership-content{ margin-bottom: 1rem; } 
