@@ -120,3 +120,5 @@ iframe{ border: 0px; }
   .portfolio .images-one iframe { width: 80vw; height: 60vw; }
 }
 
+.footer{ display: flex; justify-content: center; align-items: center; }
+.footer p{ font-size: 0.9rem; color: var(--accent-color); }
