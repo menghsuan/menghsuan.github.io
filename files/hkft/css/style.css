@@ -107,7 +107,7 @@ header.entry-header { margin-bottom: 2em; }
 .content-container table tbody tr:nth-child(even) { background-color: #fefefe;}
 .content-container table td{ border-bottom: 0px; }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .content-container table td{ padding: 0.4rem 0.1rem; font-size: 12px; }
 }
 
