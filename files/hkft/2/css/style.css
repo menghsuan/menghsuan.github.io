@@ -1,0 +1,279 @@
+:root {
+
+}
+
+@font-face{
+  font-family: Reef;
+  src: url('ionicons.woff2'), url('ionicons.woff2') format('woff2');
+}
+@font-face{
+  font-family:"Ionicons";
+  src:url("../fonts/ionicons.woff2") format("woff2"),url("../fonts/ionicons.woff") format("woff"),url("../fonts/ionicons.ttf") format("truetype"),url("../fonts/ionicons.eot?#iefix") format("embedded-opentype"),url("../fonts/ionicons.svg") format("svg");
+  font-weight:normal;
+  font-style:normal
+}
+@font-face {font-family: 'Gothic'; src: url('../fonts/Gothic.ttf'); font-display: swap;}
+
+body {
+  font-family: "Roboto", 'sans-serif', sans-serif;
+}
+
+.body__background {
+  background-image: url('../images/new/background.svg');
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #F6BA09;
+}
+
+/*** General ***/
+.stroke {
+  text-shadow: 2px 2px 0 #ffffff, -2px -2px 0 #ffffff, 2px -2px 0 #ffffff, -2px 2px 0 #ffffff, 2px 2px 0 #ffffff;
+}
+
+header.entry-header { margin-bottom: 2em; }
+
+.slick-slide{
+  padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .small-wrap{ padding: 2em 0 1em;}
+}
+
+@media only screen and (max-width: 39.9375em) {
+  .local-slide { padding: 0; }
+}
+
+
+/** font style **/
+.font-primary {
+  font-family: "Londrina Solid", sans-serif !important;
+  font-size: 3rem;
+  letter-spacing: 0.05rem;
+}
+
+.font-secondary { font-family: 'Gothic',"Gothic", sans-serif !important; }
+
+.subtitle_line{
+  border-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);;
+}
+
+.cover-background{ overflow: hidden; }
+
+.content-wrap{ margin: 1rem 0 3rem 0; }
+.content-container{
+  padding: 2.5em 2.2em 2em;
+  padding: 1.5rem 1.2rem 1rem;
+  border-top: 4px solid #ffc107;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-container > *:first-child{ margin-top: -0.5rem; }
+
+@media only screen and (min-width: 40em) {
+  .content-container { padding: 3em 3em; padding: 1.5rem 1.5rem; }
+}
+.content-title{
+  margin: 2.5rem 0 1rem;
+}
+.content-container .content-title:nth-of-type(2n+1){ color: #006f31; }
+.content-container .content-title:nth-of-type(2n){ color: #cc0200; }
+
+.content-container ul,.content-container ol{ margin-bottom: 1rem; }
+.content-container ul{ list-style: initial; }
+.content-container ul li, .content-container ol li{
+  margin: 0.1rem 0 0.1rem 1.5rem;
+  padding-left: 0;
+}
+
+.content-container .content-image-large{ margin-bottom: 1rem; }
+.content-container .content-image-large figcaption{ margin-top: 0.4rem; text-align: center; font-size: 0.85rem; font-style: italic; color: #999999; }
+.content-container .content-gallery{ 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  justify-content: center;
+  margin: 1rem 0; 
+}
+.content-container .content-gallery img {
+  object-fit: cover; 
+  flex-grow: 1; 
+  width: calc(33.33% - 0.67rem); 
+  transition: height 0.3s ease;
+}
+@media (max-width: 600px) {
+  .content-gallery img { width: calc(50% - 0.5rem); }
+  .content-gallery img:last-child { width: 100%; }
+}
+.content-container table {
+  border: 1px solid #f0f0f0;
+  border-spacing: 0;
+  border-collapse: inherit;
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
+}
+.content-container table tbody tr:nth-child(odd) { background-color: #f0f0f0;}
+.content-container table tbody tr:nth-child(even) { background-color: #fefefe;}
+.content-container table td{ border-bottom: 0px; }
+
+@media (max-width: 768px) {
+  .content-container table td{ padding: 0.4rem 0.1rem; font-size: 12px; }
+}
+
+.partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; 
+  margin-bottom: 1rem;
+}
+.partner-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc((100% - 3rem) / 4);
+  padding: 1rem 0.8rem;
+  /*border-radius: 4px;
+  border: 1px solid #f2f2f2;*/
+  transition: transform 0.3s ease;
+}
+.partner-item:hover { transform: translateY(-5px); }
+.partner-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; height: 110px;
+}
+.partner-logo img {
+  min-width: 100px; max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.partner-name {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .partner-item { flex-basis: calc((100% - 2rem) / 3); }
+}
+
+@media screen and (max-width: 480px) {
+  .partner-item { flex-basis: calc((100% - 1rem) / 2); }
+}
+
+/* FAQ part */
+.content-container .accordion{ padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; color: #444444; }
+.content-container .accordion:last-child{ border-bottom: 0px; }
+.content-container .accordion .accordion-title h4 { margin-right: 50px; padding: 0; font-family: "Roboto", 'sans-serif', sans-serif; font-size: 1.25rem; font-weight: bold; }
+.content-container .accordion .accordion-title i { width: auto; font-size: 1.3rem; padding: 0rem .6em; }
+.content-container .accordion .accordion-content{ margin: 0; font-style: normal; font-size: 1.1rem; }
+.content-container .accordion .accordion-content p{ margin: 1rem 0 0 0; padding: 1rem; border-radius: 8px; background-color: #f7f7f7; color:#444444; }
+.content-container .accordion input[type=checkbox]:checked ~ .accordion-content { margin: 0; padding: 0; }
+@media screen and (max-width: 768px) {
+  .content-container .accordion .accordion-title h4 { padding: 0em 0.3em; font-size: 1.2rem; }
+  .content-container .accordion .accordion-title i { padding: 0em 0.3em; }
+}
+@media screen and (max-width: 480px) {
+  .content-container .accordion .accordion-content{ font-size: 1rem; }
+}
+
+
+/*** General end ***/
+
+
+
+/*** Pages ***/
+/** tourguide page **/
+.tourguide-header { padding-top: 0; }
+.tourguide-slide{
+  padding-top: 56.25%;
+  border-radius: 8px;
+}
+.tourguide-slider{
+  position: relative;
+  
+  aspect-ratio: 16 / 9;
+}
+
+.tourguide-slider .slick-dots{
+  width: 20px; right: 20px; bottom: 30px;
+}
+.tourguide-slider .slick-dots li{ margin: 8px 0 0 0; }
+
+@media screen and (max-width: 1024px) {
+  .tourguide-slide{ border-radius: 0px; }
+}
+
+.tourguide-profile{ 
+  display: flex;
+  align-items: flex-end;
+  margin-top: -60px;
+  padding-right: 1.40625rem; padding-left: 1.40625rem;
+}
+
+.tourguide-profile-mobile{
+  display: flex; flex-direction: column;
+  align-items: center;
+  margin-top: -60px;
+}
+.tourguide-profile-image{ position: relative; top: 0px; bottom: 0; }
+
+.single-guide-title{
+  position: relative;
+  left: 0rem; bottom: 0;
+  flex: 1;
+  color: #212121;
+  text-align: left;
+}
+.tourguide-profile .single-guide-title{ margin-left: 1rem; }
+
+@media only screen and (max-width: 39.9375em) {
+  .tourguide-profile-image{ left: 0; }
+  .tourguide-profile{ top:-60px; }
+}
+@media only screen and (min-width: 40em){
+  .single-guide-title { font-size: 3rem; }
+}
+
+.guide-content{ padding-top: 0; }
+.tourguide-content-container { padding: 2.5em 2.2em 1.5em;; }
+.review-section{ 
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.6rem;
+}
+.review-item{ padding: 16px 0; box-sizing: border-box; border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.review-top{ display: flex; align-items: center; margin: 16px 0; }
+.review-top .review-user-avatar{ width: 48px; height: 48px; }
+.review-top .review-user-avatar img{ width: 100%; height: auto; border-radius: 50%; }
+.review-top .review-info{ display: flex; flex-direction: column; flex: 1; padding-left: 0.6rem; }
+.review-top .review-info .user-name{ font-weight: bold; color: #212121; }
+.review-top .review-info .date{ font-size: 0.85rem; color: #999999; }
+
+.review-top .review-star{ color: #ffc107; font-size: 1.2rem; }
+.review-top .review-star span{ margin-left: 4px; }
+
+.comment-title{ font-weight: bold; }
+.comment{ margin-bottom: 12px; }
+.comment .underline_yellow{ 
+  border-style: solid;
+  border-width: 0px 2px 4px 2px;
+  border-image: url(../images/hr.svg) 0 3 6 3 stretch stretch; 
+}
+
+.link a{ text-decoration: underline; }
+
+@media screen and (max-width: 480px) {
+  .comment .underline_yellow{ 
+    border-width: 0px 4px 4px 4px; }
+}
+
+/** tourguide page end **/
+/*** Pages end ***/
