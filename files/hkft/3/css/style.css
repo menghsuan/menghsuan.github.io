@@ -17,6 +17,7 @@
 
 body {
   font-family: "Roboto", 'sans-serif', sans-serif;
+  background-attachment: fixed;
 }
 
 .body__background {
