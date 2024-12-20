@@ -204,7 +204,7 @@ header.entry-header { margin-bottom: 2em; }
 /* FAQ part */
 .content-container .accordion{ padding: 1.25rem 0; border-bottom: 1px solid #f0f0f0; color: #444444; }
 .content-container .accordion:last-child{ border-bottom: 0px; }
-.content-container .accordion .accordion-title h4 { margin-right: 50px; padding: 0; font-family: 'Gothic',"Gothic", sans-serif; font-size: 1.25rem; font-weight: bold; color: #333333; }
+.content-container .accordion .accordion-title h4 { margin-right: 50px; padding: 0; font-family: 'Gothic',"Gothic", sans-serif; font-size: 1.25rem; color: #333333; }
 .content-container .accordion .accordion-title i { width: auto; font-size: 1.3rem; padding: 0rem .6em; }
 .content-container .accordion .accordion-content{ margin: 0; font-style: normal; font-size: 1.1rem; }
 .content-container .accordion .accordion-content p{ margin: 1rem 0 0 0; padding: 1rem 0rem; border-radius: 8px; color:#444444; }
@@ -267,16 +267,29 @@ header.entry-header { margin-bottom: 2em; }
 }
 .tourguide-profile .single-guide-title{ margin-left: 1rem; }
 
+.tourguide-top{
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-top: -50px !important;
+  margin-bottom: 1rem;
+}
+.tourguide-top h2{ font-size: 2.4rem; }
+.tourguide-top h2 span{ display: inline-block; }
+
 @media only screen and (max-width: 39.9375em) {
-  .tourguide-profile-image{ left: 0; }
+  .tourguide-profile-image{ left: 0; width: 150px; height: 150px; }
   .tourguide-profile{ top:-60px; }
+
+  .tourguide-top h2{ margin-bottom: ; font-size: 2rem; }
+  .tourguide-top h2 span{ display: block; line-height: 1.1; }
 }
 @media only screen and (min-width: 40em){
   .single-guide-title { font-size: 3rem; }
 }
 
 .guide-content{ padding-top: 0; }
-.tourguide-content-container { padding: 2.5em 2.2em 1.5em;; }
+.tourguide-content-container { padding: 2.5em 2.2em 1.5em; }
 .review-section{ 
   display: grid;
   grid-template-columns: 1fr;
