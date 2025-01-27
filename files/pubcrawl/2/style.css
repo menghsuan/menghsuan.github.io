@@ -176,6 +176,8 @@ header{
   border-bottom: 0px solid #ffffff; 
 }
 
+header .container{ padding: 0; }
+
 .fix-top{ padding-top: 110px; }
 .top_logo{ display: flex; align-items: center; }
 .top_logo img{ width: 72px; height: 72px; }
@@ -511,8 +513,9 @@ body.dark{
 
 .dark .bg-circle1, .dark .bg-circle2{ background-image: url(../images/bg-circle2.svg); }
 
-.dark .fix-top{ background-color: #000000; }
+.dark .fix-top{ background-color: transparent; }
 .dark header{ background-image: linear-gradient(180deg, #000000 65%, rgba(0, 0, 0, 0) 100%); }
+/*.dark header{ background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%); border-bottom: 1px solid #000000;}*/
 
 .dark footer{ background-color: rgba(0, 0, 0, 0.4); border-top: 1px solid #000000; }
 
@@ -552,7 +555,7 @@ body.dark{
 .dark .contact-item__text h6 a{ color: var(--white); }
 
 .dark .modal-dialog__container { background-color: var(--secondary-color-dark); border: 1px solid var(--secondary-color); }
-.dark .modal-dialog__container header{ background: transparent; }
+.dark .modal-dialog__container header{ background: transparent; border: none; }
 .dark .modal-dialog__content ul{ padding-left: 0; }
 .dark .modal-dialog__content ul li{ list-style: none; text-align: center;  }
 .dark .modal-dialog__content ul li a{ color: var(--white); }
