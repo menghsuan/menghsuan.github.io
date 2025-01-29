@@ -176,7 +176,9 @@ header{
   border-bottom: 0px solid #ffffff; 
 }
 
-header .container{ padding: 0; }
+@media only screen and (min-width: 769px) {
+  header .container{ padding: 0; }
+}
 
 .fix-top{ padding-top: 110px; }
 .top_logo{ display: flex; align-items: center; }
