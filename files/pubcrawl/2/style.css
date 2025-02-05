@@ -164,6 +164,13 @@ p { font-size: 1rem; }
   background-size: contain; background-image: url(../images/bg-circle1.svg); 
 }
 
+@media (min-width: 769px) {
+  .bg-circle1, .bg-circle2{ width: 110vw; height: 110vw; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .bg-circle1, .bg-circle2{ width: 120vw; height: 120vw; }
+}
+
 /*** Background end ***/
 
 
