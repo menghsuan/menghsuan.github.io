@@ -460,6 +460,7 @@ footer .nav__button{ margin-left: 1rem; }
 .footer__copyright{ font-size: 0.8rem; }
 .footer__menu{ display: flex; justify-content: flex-end; }
 
+
 @media only screen and (max-width: 767px) {
   footer .nav__button{ margin-left: 0; margin-right: 0.6rem; } 
   .footer__menu{ margin-top: 0.6rem; justify-content: left; }
@@ -569,6 +570,8 @@ body.dark{
 .dark .modal-dialog__content ul li{ list-style: none; text-align: center;  }
 .dark .modal-dialog__content ul li a{ color: var(--white); }
 .dark .modal-dialog__content ul li a:hover{ color: var(--primary-color); text-decoration: none; }
+
+.dark footer.modal-dialog__footer, footer.modal-dialog__footer{ background-color: transparent; border: none; }
 /** Dark version end **/
 
 
