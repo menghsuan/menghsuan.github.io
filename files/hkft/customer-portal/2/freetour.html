@@ -23,18 +23,18 @@
 
     <!-- Google tag (gtag.js) -->
     <script async="" src="ehop_files/fbevents.js"></script>
-<script async="" src="ehop_files/js"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
+    <script async="" src="ehop_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-function gtag() {
-dataLayer.push(arguments);
-}
-gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-gtag('config', 'G-N0SH4H02PM');
+      gtag('config', 'G-N0SH4H02PM');
 
-</script>
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -91,7 +91,7 @@ gtag('config', 'G-N0SH4H02PM');
             <div class="logo"><a href="https://thingstodoinhk.com/"><i class="bi bi-list"></i></a></div>
           </div>
           <div class="col-6 d-flex justify-content-end align-items-center">
-            <button type="button" class="nav__button nav__button--language" aria-label="Languages" data-modal="modal--language"></button>
+            <button id="change-language" type="button" class="nav__button nav__button--language" aria-label="Languages" data-modal="modal--language"></button>
           </div>
         </div>
       </div>
@@ -345,7 +345,7 @@ gtag('config', 'G-N0SH4H02PM');
     </div>
     <!-- Main end -->
 
-    
+
     <div id="modal--language" class="modal-dialog">
       <div class="modal-dialog__container">
         <section class="modal-section">
@@ -388,6 +388,21 @@ gtag('config', 'G-N0SH4H02PM');
           });
         });
       });
+    </script>
+
+    <script>
+      document.getElementById('change-language').onclick = function() {
+        document.getElementById('modal--language').classList.add('show');
+      };
+
+      function closeModal() {
+        document.getElementById('modal--language').classList.remove('show');
+      }
+
+      function setLanguage(language) {
+        document.getElementById('language').innerText = language; // Update displayed language
+        closeModal(); // Close the modal after selection
+      }
     </script>
 
 
