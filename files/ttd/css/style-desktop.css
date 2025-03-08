@@ -1,0 +1,190 @@
+.main--column__right { display: none; }
+
+@media (min-width: 992px) {
+  .main--column__right { display: block; }
+  .h4 { font-size: 34px; }
+  .p5 { font-size: 16px; }
+  .background { width: 100vw; }
+  .desktop--display__none { display: none; }
+
+  .main--column {
+    display: flex;
+    margin: auto;
+  }
+  .main--column__left {
+    min-width: 850px;
+    max-width: 1000px;
+  }
+  .main--column__right {
+    padding-left: 15px;
+    width: 100%;
+  }
+  
+  .map--container { padding-top: unset; }
+  .main--column__left .article--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .main--column__right #nearMeNow--map {
+    height: calc(100vh - 140px);
+    border-radius: 8px;
+  }
+  .article--title {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+  .nav--toolbar__btn.nav--toolbar__map { display: none; }
+  #position-map { height: calc(100vh - 270px); }
+  .content--column {
+    display: flex;
+    justify-content: center;
+    max-width: 1368px;
+    margin: auto;
+  }
+  .content--column__left { max-width: 888px; }
+  .content--column__right {
+    width: 480px;
+    min-width: 480px;
+  }
+  .content--column__ordering {
+    display: flex;
+    flex-direction: column;
+  }
+  .content--column__ordering .content--wrapper { order: 2; }
+  .content--column__ordering .detail--container { order: 1; }
+  .detail--container { margin-top: 15px; }
+  #detail--map { height: 500px; }
+  #article--neighbourhood #nearMeNow--map { height: 500px; }
+  .detail--more { display: none; }
+  .detail--hidden { display: unset; }
+  .detail--row.detail--overview.detail--hidden { display: flex; }
+  .detail--row__day.detail--overview.detail--hidden { display: block; }
+  #article--neighbourhood .main--wrapper { padding: 15px; }
+  .pagination--wrapper { margin: 10px 0 0 0; }
+  .pagination--page__last { flex-basis: 0; }
+  .content--brief .h1 {
+    width: 70%;
+    max-width: 858px;
+    margin: auto;
+  }
+  .main--column__left .main--banner {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    background-image: url("/assets/images/common/tab-banner.jpg");
+    background-size: 100% auto;
+    background-position: center;
+    color: white;
+    border-radius: 8px;
+  }
+  .main--column__left .main--banner > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-left: 15px;
+  }
+  .main--column__left .main--banner .weather--day { text-align: center; }
+  .main--column__left .main--tab { height: 53px; }
+  .main--column__left .main--wrapper {
+    height: calc(100vh - 430px);
+    overflow-y: auto;
+  }
+  .main--column__left #searchList .article--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main--column__left .main--banner .homepage--weather { margin-right: 40px; }
+  .main--column__left .main--banner .homepage--weather .weather--data { margin-top: 0; }
+  .main--column__left .main--banner .homepage--weather .weather--icon img {
+    width: 40px;
+    height: 40px;
+  }
+  .main--column__left .map--container { display: none; }
+  .search--column .search--container {
+    overflow: auto;
+    max-height: calc(100vh - 235px);
+    padding: 0 15px 15px 15px;
+    margin: 0 15px 15px 0;
+  }
+  .search--column .main--column__right { padding: 15px 15px 15px 0; }
+  .search--column .search--pagination { padding-right: 15px; }
+  .list--wrapper { margin-bottom: 2px; }
+  #searchMap {
+    display: block !important;
+    width: 100%;
+    height: calc(100vh - 93px);
+    border-radius: 8px;
+  }
+  #itinerary .content--column__left { width: calc(100% - 480px); }
+}
+
+@media (min-width: 1200px) {
+  .itinerary-swiper--main img,
+  .itinerary-swiper--thumbnail img { aspect-ratio: auto; }
+  .itinerary-article--wrapper > a { display: flex; }
+  .itinerary-article--duration-mobile,
+  .itinerary-article--title-mobile { display: none; }
+  .itinerary-article--image {
+    overflow: hidden;
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  .itinerary-article--image img {
+    border-radius: 10px;
+    width: auto;
+    height: 200px;
+  }
+  .itinerary-article--wrapper .itinerary-article--image img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+  }
+  .itinerary-article--information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    color: #FFF;
+    border-radius: 10px;
+    flex-grow: 1;
+    line-height: 1.5;
+    padding: 15px 30px;
+    margin-left: 20px;
+    border-left: 20px solid rgba(0,0,0, 0.25);
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  .itinerary-article--title-desktop {
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 3px;
+  }
+  .itinerary-article--duration-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .itinerary-article--duration-desktop > div {
+    display: flex;
+    align-items: center;
+  }
+  .itinerary-article--description {
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+}
