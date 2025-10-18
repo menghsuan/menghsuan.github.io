@@ -27,7 +27,7 @@ a:hover,a:focus { text-decoration: none; }
 iframe{ border: 0px; }
 
 .title{ color: var( --main-color ); font-family: var(--font-title); }
-.tag{ color: var( --accent-color ); color: #D0D0D2; }
+.tag{ color: var( --accent-color ); color: #D0D0D2; color: #C6C6C9; }
 .gray{ color: var( --accent-color ); }
 .link{ }
 .link:hover{ text-decoration: underline; }
@@ -93,7 +93,7 @@ iframe{ border: 0px; }
 .portfolio .info{ position: relative; margin: 1rem 0; }
 .portfolio .info .title{ margin: 0 0 0.4rem 0; padding-right: 40px; font-size: 1.6rem; line-height: 1.4rem; }
 .portfolio .info .tag{ margin: 0.4rem 0 0.8rem; }
-.portfolio .info .time{ position: absolute; top: 0; right: 0; margin: 0; color: var( --accent-color ); }
+.portfolio .info .time{ position: absolute; top: 0; right: 0; margin: 0; color: var( --accent-color ); color: #99999d; }
 .portfolio .info .more{ margin: 1.4rem 0 1rem 0; line-height: 1.6rem; font-weight: 300; }
 .portfolio .info .more b{ display: inline-block; font-size: 1.1rem; font-weight: 400; }
 .portfolio .info .more a{ color: var( --accent-color ); text-decoration: underline; }
@@ -106,7 +106,7 @@ iframe{ border: 0px; }
 .portfolio .images-four{ grid-template-columns: 1fr 1fr 1fr 1fr; padding: 15px; }
 .portfolio .images{  }
 .portfolio .images img{ width: inherit; max-width: 100%; }
-.portfolio .images-info{ margin: 0.6rem 0 2rem; }
+.portfolio .images-info{ margin: 0.2rem 0 2rem; color: rgba(245, 245, 245, 0.75); font-style: italic; text-align: center; }
 
 .portfolio .images-one iframe { width: 500px; height: 350px; }
 
