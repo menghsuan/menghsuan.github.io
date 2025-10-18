@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+    <title>聊天交友 APP</title>
+    <link rel="stylesheet" type="text/css" href="../mobile.css">
+  </head>
+  <body>
+    <div class="WRAPPER">
+      <div class="HEAD H65">
+        <div class="CONTENT">
+          <div class="PROGRESS_BAR">
+            <div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div>
+          </div>
+          <div class="MD_W">
+            <div class="LEFT_BTN"><div class="BACK btn_icon_block" onclick="history.back()"><img class="btn_icon_img" src="../images/arrow_left.png"></div></div>
+            <div class="CENTER"><!--h3 class="TITLE">註冊</h3--></div>
+            <div class="RIGHT_BTN"><!--div class="BTN_TEXT" onclick="javascript:location.href='2.html'">略過</div--></div>
+          </div>
+        </div>
+      </div>
+      <div class="MAIN">
+        <div class="CONTENT GROWFULL">
+          <h1 class="TITLE">我的手機號碼</h1>
+          <div class="h5">我們將傳送內含驗證碼的簡訊給你</div>
+          <form name="UP_LOGON_FORM" id="UP_LOGON_FORM" action="index.phtml" method="POST" onsubmit="">
+            <input type="hidden" name="PUT" value="up_logon">
+            <input type="hidden" name="FROM" value="up_logon">
+            <input type="hidden" name="FID" value="0">
+            <div class="FORM_FIELD">
+              <div class="FORM_ITEM">
+                <div id="FORM_COUNTRY_SELECT" class="INPUT INPUT_SELECT" style="width: 120px">+886</div>
+                <input class="INPUT" name="" type="tel" value="" size="" placeholder="">
+              </div>
+              <!--div class="CAPTION"><span class="LEFT">錯誤</span><span class="RIGHT">35 / 35</span></div-->
+            </div>
+          </form>
+        </div> 
+      </div>
+      <div class="BOTTOM H65">
+        <div class="CONTENT">
+          <div class="FORM_BTN">
+            <div class="BTN_DISABLE" onclick="javascript:location.href='1-1.html'"><span>繼續</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 國碼選單 -->
+    <div id="FORM_COUNTRY" class="FORM_COUNTRY" style="display: none;">
+      <div class="HEAD H90">
+        <div class="CONTENT">
+          <div class="MD_W">
+            <div class="LEFT_BTN"><div id="FORM_COUNTRY_CLOSE" class="BACK btn_icon_block"><img class="btn_icon_img" src="../images/arrow-left.png"></div></div>
+            <div class="CENTER"><h3 class="TITLE">選擇國家或地區</h3></div>
+            <div class="RIGHT_BTN"><!--div class="BTN_TEXT" onclick="javascript:location.href='2.html'">略過</div--></div>
+          </div>
+          <div class="SEARCH_BOX"><label class="SEARCH_BAR"><input class="INPUT INPUT_SEARCH" type="text" placeholder="搜尋"></label></div>
+        </div>
+      </div>
+      <div class="MAIN">
+        <ul class="COUNTRY_LIST">
+          <li class="selected" data-code="TW"><label>台灣</label><span>886</span></li>
+          <li class="" data-code="CN"><label>中國大陸</label><span>86</span></li>
+          <li class="" data-code="HK"><label>香港</label><span>852</span></li>
+          <li class="" data-code="MO"><label>澳門</label><span>853</span></li>
+          <li class="" data-code="MY"><label>馬來西亞</label><span>60</span></li>
+          <li class="" data-code="SG"><label>新加坡</label><span>65</span></li>
+          <li class="" data-code="US"><label>美國</label><span>1</span></li>
+          <li class="" data-code="VN"><label>越南</label><span>84</span></li>
+          <li class="" data-code="JP"><label>日本</label><span>81</span></li>
+          <li class="" data-code="EG"><label>埃及</label><span>20</span></li>
+          <li class="" data-code="MA"><label>摩洛哥</label><span>212</span></li>
+          <li class="" data-code="SA"><label>沙特阿拉柏</label><span>966</span></li>
+          <li class="" data-code="AF"><label>阿富汗</label><span>93</span></li>
+          <li class="" data-code="AL"><label>阿爾巴尼亞</label><span>355</span></li>
+          <li class="" data-code="AS"><label>美屬薩摩亞</label><span>1684</span></li>
+          <li class="" data-code="AD"><label>安道爾</label><span>376</span></li>
+          <li class="" data-code="AO"><label>安哥拉</label><span>244</span></li>
+          <li class="" data-code="AI"><label>安圭拉</label><span>1264</span></li>
+          <li class="" data-code="AQ"><label>南極洲</label><span>672</span></li>
+          <li class="" data-code="AG"><label>安提瓜和巴布達</label><span>1268</span></li>
+          <li class="" data-code="AR"><label>阿根廷</label><span>54</span></li>
+          <li class="" data-code="AM"><label>亞美尼亞</label><span>374</span></li>
+          <li class="" data-code="AW"><label>阿魯巴</label><span>297</span></li>
+          <li class="" data-code="AU"><label>澳大利亞</label><span>61</span></li>
+          <li class="" data-code="AT"><label>奧地利</label><span>43</span></li>
+          <li class="" data-code="AZ"><label>阿塞拜疆</label><span>994</span></li>              
+          <li class="" data-code="BS"><label>巴哈馬</label><span>1242</span></li>
+          <li class="" data-code="BH"><label>巴林</label><span>973</span></li>
+          <li class="" data-code="BD"><label>孟加拉國</label><span>880</span></li>
+          <li class="" data-code="BB"><label>巴巴多斯</label><span>1246</span></li>
+          <li class="" data-code="BY"><label>白俄羅斯</label><span>375</span></li>
+          <li class="" data-code="BE"><label>比利時</label><span>32</span></li>
+          <li class="" data-code="BZ"><label>伯利茲</label><span>501</span></li>
+          <li class="" data-code="BJ"><label>貝寧</label><span>229</span></li>
+          <li class="" data-code="BM"><label>百慕大</label><span>1441</span></li>
+          <li class="" data-code="BT"><label>不丹</label><span>975</span></li>
+          <li class="" data-code="BO"><label>玻利維亞</label><span>591</span></li>
+          <li class="" data-code="BA"><label>波斯尼亞和黑塞哥維那</label><span>387</span></li>
+          <li class="" data-code="BW"><label>博茨瓦納</label><span>267</span></li>
+          <li class="" data-code="BR"><label>巴西</label><span>55</span></li>
+          <li class="" data-code="IO"><label>英屬印度洋領地</label><span>246</span></li>
+          <li class="" data-code="BN"><label>文萊</label><span>673</span></li>
+          <li class="" data-code="BG"><label>保加利亞</label><span>359</span></li>
+          <li class="" data-code="BF"><label>布基納法索</label><span>226</span></li>
+          <li class="" data-code="BI"><label>布隆迪</label><span>257</span></li>
+          <li class="" data-code="KH"><label>柬埔寨</label><span>855</span></li>
+          <li class="" data-code="CM"><label>喀麥隆</label><span>237</span></li>
+          <li class="" data-code="CA"><label>加拿大</label><span>1</span></li>
+          <li class="" data-code="CV"><label>佛得角</label><span>238</span></li>
+          <li class="" data-code="KY"><label>開曼群島</label><span>1345</span></li>
+          <li class="" data-code="CF"><label>中非共和國</label><span>236</span></li>
+          <li class="" data-code="TD"><label>乍得</label><span>235</span></li>
+          <li class="" data-code="CL"><label>智利</label><span>56</span></li>
+          <li class="" data-code="CX"><label>聖誕島</label><span>61</span></li>
+          <li class="" data-code="CC"><label>科科斯群島</label><span>61</span></li>
+          <li class="" data-code="CO"><label>哥倫比亞</label><span>57</span></li>
+          <li class="" data-code="KM"><label>科摩羅</label><span>269</span></li>
+          <li class="" data-code="CG"><label>剛果民主共和國</label><span>242</span></li>
+          <li class="" data-code="CD"><label>剛果民主共和國</label><span>243</span></li>
+          <li class="" data-code="CK"><label>庫克群島</label><span>682</span></li>
+          <li class="" data-code="CR"><label>哥斯達黎加</label><span>506</span></li>
+          <li class="" data-code="CI"><label>象牙海岸</label><span>225</span></li>
+          <li class="" data-code="HR"><label>克羅地亞</label><span>385</span></li>
+          <li class="" data-code="CU"><label>古巴</label><span>53</span></li>
+          <li class="" data-code="CY"><label>塞浦路斯</label><span>357</span></li>
+          <li class="" data-code="CZ"><label>捷克共和國</label><span>420</span></li>
+          <li class="" data-code="DK"><label>丹麥</label><span>45</span></li>
+          <li class="" data-code="DJ"><label>吉布提</label><span>253</span></li>
+          <li class="" data-code="DM"><label>多米尼加</label><span>1767</span></li>
+          <li class="" data-code="DO"><label>多明尼加共和國</label><span>1809</span></li>
+          <li class="" data-code="EC"><label>厄瓜多爾</label><span>593</span></li>
+          <li class="" data-code="SV"><label>薩爾瓦多</label><span>503</span></li>
+          <li class="" data-code="GQ"><label>赤道幾內亞</label><span>240</span></li>
+          <li class="" data-code="ER"><label>厄立特里亞</label><span>291</span></li>
+          <li class="" data-code="EE"><label>愛沙尼亞</label><span>372</span></li>
+          <li class="" data-code="ET"><label>埃塞俄比亞</label><span>251</span></li>
+          <li class="" data-code="FK"><label>福克蘭群島</label><span>500</span></li>
+          <li class="" data-code="FO"><label>法羅群島</label><span>298</span></li>
+          <li class="" data-code="FJ"><label>斐</label><span>679</span></li>
+          <li class="" data-code="FI"><label>芬蘭</label><span>358</span></li>
+          <li class="" data-code="FR"><label>法國</label><span>33</span></li>
+          <li class="" data-code="PF"><label>法屬波利尼西亞</label><span>689</span></li>
+          <li class="" data-code="GA"><label>加蓬</label><span>44</span></li>
+          <li class="" data-code="GM"><label>岡比亞</label><span>220</span></li>
+          <li class="" data-code="GE"><label>格魯吉亞</label><span>594</span></li>
+          <li class="" data-code="DE"><label>德國</label><span>49</span></li>
+          <li class="" data-code="GH"><label>加納</label><span>233</span></li>
+          <li class="" data-code="GI"><label>直布羅陀</label><span>350</span></li>
+          <li class="" data-code="GR"><label>希臘</label><span>30</span></li>
+          <li class="" data-code="GL"><label>格陵蘭</label><span>299</span></li>
+          <li class="" data-code="GD"><label>格林納達</label><span>995</span></li>
+          <li class="" data-code="GU"><label>關島</label><span>1671</span></li>
+          <li class="" data-code="GT"><label>危地馬拉</label><span>502</span></li>
+          <li class="" data-code="GN"><label>幾內亞</label><span>224</span></li>
+          <li class="" data-code="GW"><label>幾內亞比紹</label><span>245</span></li>
+          <li class="" data-code="GY"><label>圭亞那</label><span>592</span></li>
+          <li class="" data-code="HT"><label>海地</label><span>509</span></li>
+          <li class="" data-code="VA"><label>教廷</label><span>379</span></li>
+          <li class="" data-code="HN"><label>洪都拉斯</label><span>504</span></li>
+          <li class="" data-code="HU"><label>匈牙利</label><span>36</span></li>
+          <li class="" data-code="IS"><label>冰島</label><span>354</span></li>
+          <li class="" data-code="IN"><label>印度</label><span>91</span></li>
+          <li class="" data-code="ID"><label>印度尼西亞</label><span>62</span></li>
+          <li class="" data-code="IR"><label>伊朗</label><span>98</span></li>
+          <li class="" data-code="IQ"><label>伊拉克</label><span>964</span></li>
+          <li class="" data-code="IE"><label>愛爾蘭</label><span>353</span></li>
+          <li class="" data-code="IM"><label>馬恩島</label><span>44</span></li>
+          <li class="" data-code="IL"><label>以色列</label><span>972</span></li>
+          <li class="" data-code="IT"><label>意大利</label><span>39</span></li>
+          <li class="" data-code="JM"><label>牙買加</label><span>1876</span></li>
+          <li class="" data-code="JE"><label>新澤西</label><span>44</span></li>
+          <li class="" data-code="JO"><label>約旦</label><span>962</span></li>
+          <li class="" data-code="KZ"><label>哈薩克斯坦</label><span>7</span></li>
+          <li class="" data-code="KE"><label>肯尼亞</label><span>254</span></li>
+          <li class="" data-code="KI"><label>基里巴斯</label><span>686</span></li>
+          <li class="" data-code="KP"><label>北朝鮮</label><span>850</span></li>
+          <li class="" data-code="KR"><label>韓國</label><span>82</span></li>
+          <li class="" data-code="KW"><label>科威特</label><span>965</span></li>
+          <li class="" data-code="KG"><label>吉爾吉斯斯坦</label><span>996</span></li>
+          <li class="" data-code="LA"><label>老撾</label><span>856</span></li>
+          <li class="" data-code="LV"><label>拉脫維亞</label><span>371</span></li>
+          <li class="" data-code="LB"><label>黎巴嫩</label><span>961</span></li>
+          <li class="" data-code="LS"><label>萊索托</label><span>266</span></li>
+          <li class="" data-code="LR"><label>利比里亞</label><span>231</span></li>
+          <li class="" data-code="LY"><label>利比亞</label><span>218</span></li>
+          <li class="" data-code="LI"><label>列支敦士登</label><span>423</span></li>
+          <li class="" data-code="LT"><label>立陶宛</label><span>370</span></li>
+          <li class="" data-code="LU"><label>盧森堡</label><span>352</span></li>
+          <li class="" data-code="MO"><label>澳門</label><span>853</span></li>
+          <li class="" data-code="MK"><label>馬其頓</label><span>389</span></li>
+          <li class="" data-code="MG"><label>馬達加斯加</label><span>261</span></li>
+          <li class="" data-code="MW"><label>馬拉維</label><span>265</span></li>
+          <li class="" data-code="MY"><label>馬來西亞</label><span>60</span></li>
+          <li class="" data-code="MV"><label>馬爾代夫</label><span>960</span></li>
+          <li class="" data-code="ML"><label>馬里</label><span>223</span></li>
+          <li class="" data-code="MT"><label>馬耳他</label><span>356</span></li>
+          <li class="" data-code="MH"><label>馬紹爾群島</label><span>692</span></li>
+          <li class="" data-code="MR"><label>毛里塔尼亞</label><span>222</span></li>
+          <li class="" data-code="MU"><label>毛里求斯</label><span>230</span></li>
+          <li class="" data-code="YT"><label>馬約特</label><span>262</span></li>
+          <li class="" data-code="MX"><label>墨西哥</label><span>52</span></li>
+          <li class="" data-code="FM"><label>密克羅尼西亞</label><span>691</span></li>
+          <li class="" data-code="MD"><label>摩爾多瓦</label><span>373</span></li>
+          <li class="" data-code="MC"><label>摩納哥</label><span>377</span></li>
+          <li class="" data-code="MN"><label>蒙古</label><span>976</span></li>
+          <li class="" data-code="MS"><label>蒙特塞拉特</label><span>1664</span></li>
+          <li class="" data-code="MZ"><label>莫桑比克</label><span>258</span></li>
+          <li class="" data-code="MM"><label>緬甸</label><span>95</span></li>
+          <li class="" data-code="NA"><label>納米比亞</label><span>264</span></li>
+          <li class="" data-code="NR"><label>瑙魯</label><span>674</span></li>
+          <li class="" data-code="NP"><label>尼泊爾</label><span>977</span></li>
+          <li class="" data-code="NL"><label>荷蘭</label><span>31</span></li>
+          <li class="" data-code="NC"><label>新喀裡多尼亞</label><span>687</span></li>
+          <li class="" data-code="NZ"><label>新西蘭</label><span>64</span></li>
+          <li class="" data-code="NI"><label>尼加拉瓜</label><span>505</span></li>
+          <li class="" data-code="NE"><label>尼日爾</label><span>227</span></li>
+          <li class="" data-code="NG"><label>尼日利亞</label><span>234</span></li>
+          <li class="" data-code="NU"><label>紐埃</label><span>683</span></li>
+          <li class="" data-code="MP"><label>北馬里亞納群島</label><span>1670</span></li>
+          <li class="" data-code="NO"><label>挪威</label><span>47</span></li>
+          <li class="" data-code="OM"><label>阿曼</label><span>968</span></li>
+          <li class="" data-code="PK"><label>巴基斯坦</label><span>92</span></li>
+          <li class="" data-code="PW"><label>帕勞</label><span>680</span></li>
+          <li class="" data-code="PS"><label>巴勒斯坦</label><span>970</span></li>
+          <li class="" data-code="PA"><label>巴拿馬</label><span>507</span></li>
+          <li class="" data-code="PG"><label>巴布亞新幾內亞</label><span>675</span></li>
+          <li class="" data-code="PY"><label>巴拉圭</label><span>595</span></li>
+          <li class="" data-code="PE"><label>秘魯</label><span>51</span></li>
+          <li class="" data-code="PH"><label>菲律賓</label><span>63</span></li>
+          <li class="" data-code="PL"><label>波蘭</label><span>48</span></li>
+          <li class="" data-code="PT"><label>葡萄牙</label><span>351</span></li>
+          <li class="" data-code="PR"><label>波多黎各</label><span>1787</span></li>
+          <li class="" data-code="QA"><label>卡塔爾</label><span>974</span></li>
+          <li class="" data-code="RE"><label>團圓</label><span>262</span></li>
+          <li class="" data-code="RO"><label>羅馬尼亞</label><span>40</span></li>
+          <li class="" data-code="RU"><label>俄國</label><span>7</span></li>
+          <li class="" data-code="RW"><label>盧旺達</label><span>250</span></li>
+          <li class="" data-code="SH"><label>聖赫勒拿</label><span>290</span></li>
+          <li class="" data-code="KN"><label>聖基茨和尼維斯</label><span>1869</span></li>
+          <li class="" data-code="LC"><label>聖盧西亞</label><span>1758</span></li>
+          <li class="" data-code="PM"><label>聖皮埃爾和密克隆</label><span>508</span></li>
+          <li class="" data-code="VC"><label>聖文森特和格林納丁斯</label><span>1784</span></li>
+          <li class="" data-code="WS"><label>薩摩亞</label><span>685</span></li>
+          <li class="" data-code="SM"><label>聖馬力諾</label><span>378</span></li>
+          <li class="" data-code="ST"><label>聖多美和普林西比</label><span>239</span></li>
+          <li class="" data-code="SN"><label>塞內加爾</label><span>221</span></li>
+          <li class="" data-code="SC"><label>塞舌爾</label><span>248</span></li>
+          <li class="" data-code="SL"><label>塞拉利昂</label><span>232</span></li>
+          <li class="" data-code="SG"><label>新加坡</label><span>65</span></li>
+          <li class="" data-code="SK"><label>斯洛伐克</label><span>421</span></li>
+          <li class="" data-code="SI"><label>斯洛文尼亞</label><span>386</span></li>
+          <li class="" data-code="SB"><label>所羅門群島</label><span>677</span></li>
+          <li class="" data-code="SO"><label>索馬里</label><span>252</span></li>
+          <li class="" data-code="ZA"><label>南非</label><span>27</span></li>
+          <li class="" data-code="ES"><label>西班牙</label><span>34</span></li>
+          <li class="" data-code="LK"><label>斯里蘭卡</label><span>94</span></li>
+          <li class="" data-code="SD"><label>蘇丹</label><span>249</span></li>
+          <li class="" data-code="SR"><label>蘇里南</label><span>597</span></li>
+          <li class="" data-code="SJ"><label>斯瓦爾巴特</label><span>47</span></li>
+          <li class="" data-code="SZ"><label>斯威士蘭</label><span>268</span></li>
+          <li class="" data-code="SE"><label>瑞典</label><span>46</span></li>
+          <li class="" data-code="CH"><label>瑞士</label><span>41</span></li>
+          <li class="" data-code="SY"><label>敘利亞</label><span>963</span></li>
+          <li class="" data-code="TJ"><label>塔吉克斯坦</label><span>992</span></li>
+          <li class="" data-code="TZ"><label>坦桑尼亞</label><span>255</span></li>
+          <li class="" data-code="TH"><label>泰國</label><span>66</span></li>
+          <li class="" data-code="TL"><label>東帝汶</label><span>670</span></li>
+          <li class="" data-code="TG"><label>多哥</label><span>228</span></li>
+          <li class="" data-code="TK"><label>托克勞</label><span>690</span></li>
+          <li class="" data-code="TO"><label>湯加</label><span>676</span></li>
+          <li class="" data-code="TT"><label>特立尼達和多巴哥</label><span>1868</span></li>
+          <li class="" data-code="TN"><label>突尼斯</label><span>216</span></li>
+          <li class="" data-code="TR"><label>土耳其</label><span>90</span></li>
+          <li class="" data-code="TM"><label>土庫曼斯坦</label><span>993</span></li>
+          <li class="" data-code="TC"><label>特克斯和凱科斯群島</label><span>1649</span></li>
+          <li class="" data-code="TV"><label>圖瓦盧</label><span>688</span></li>
+          <li class="" data-code="UG"><label>烏干達</label><span>256</span></li>
+          <li class="" data-code="UA"><label>烏克蘭</label><span>380</span></li>
+          <li class="" data-code="AE"><label>阿拉伯聯合酋長國</label><span>971</span></li>
+          <li class="" data-code="GB"><label>英國</label><span>44</span></li>
+          <li class="" data-code="UY"><label>烏拉圭</label><span>598</span></li>
+          <li class="" data-code="UZ"><label>烏茲別克斯坦</label><span>998</span></li>
+          <li class="" data-code="VU"><label>瓦努阿圖</label><span>678</span></li>
+          <li class="" data-code="VE"><label>委內瑞拉</label><span>58</span></li>
+          <li class="" data-code="VG"><label>英屬維爾京群島</label><span>1284</span></li>
+          <li class="" data-code="VI"><label>美屬維爾京群島</label><span>1340</span></li>
+          <li class="" data-code="EH"><label>西撒哈拉</label><span>212</span></li>
+          <li class="" data-code="YE"><label>也門</label><span>967</span></li>
+          <li class="" data-code="ZM"><label>贊比亞</label><span>260</span></li>
+          <li class="" data-code="ZW"><label>津巴布韋</label><span>263</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 國碼選單 end-->
+    <script>
+      var FORM_COUNTRY_SELECT = document.getElementById("FORM_COUNTRY_SELECT");
+      var FORM_COUNTRY = document.getElementById("FORM_COUNTRY");
+      var FORM_COUNTRY_CLOSE = document.getElementById("FORM_COUNTRY_CLOSE");
+      FORM_COUNTRY_SELECT.onclick = function() {
+        FORM_COUNTRY.style.display = "flex";
+      }
+      FORM_COUNTRY_CLOSE.onclick = function() {
+        FORM_COUNTRY.style.display = "none";
+      }
+    </script>
+
+  </body>
+</html>

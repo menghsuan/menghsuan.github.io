@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+    <title>聊天交友 APP</title>
+    <link rel="stylesheet" type="text/css" href="../mobile.css">
+  </head>
+  <body>
+    <div class="WRAPPER">
+      <div class="HEAD H65">
+        <div class="CONTENT">
+          <div class="PROGRESS_BAR">
+            <div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div>
+          </div>
+          <div class="MD_W">
+            <div class="LEFT_BTN"><div class="BACK btn_icon_block" onclick="history.back()"><img class="btn_icon_img" src="../images/arrow_left.png"></div></div>
+            <div class="CENTER"></div>          
+            <div class="RIGHT_BTN"><div class="BTN_TEXT" onclick="javascript:location.href='8.html'">略過</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="MAIN">
+        <div class="CONTENT GROWFULL">
+          <h1 class="TITLE">更多生活照...</h1>
+          <div class="h5">可以上傳你的自拍、興趣、旅行、運動、寵物...等照片，照片越豐富, 越容易收到別人的喜歡喔~</div>
+          <form name="UP_LOGON_FORM" id="UP_LOGON_FORM" action="index.phtml" method="POST" onsubmit="">
+            <input type="hidden" name="PUT" value="up_logon">
+            <input type="hidden" name="FROM" value="up_logon">
+            <input type="hidden" name="FID" value="0">
+            <div class="FORM_FIELD">
+              <div class="FORM_ITEM">
+                <label class="UPLOAD_FILE">
+                  <img class="UPLOAD_PHOTO" src="../images/photos/02.jpg">
+                  <div class="BTN_DELETE" id="DELETE_PHTOT_BTN"><img class="btn_icon_img" src="../images/dislike.png"></div>
+                </label>
+                <label class="UPLOAD_FILE">
+                  <input type="file">
+                  <span class="UPLOAD_ICON"><img class="btn_icon_img" src="../images/plus.png"></span>
+                </label>
+              </div>
+              <div class="FORM_ITEM">
+                <label class="UPLOAD_FILE">
+                  <input type="file">
+                  <span class="UPLOAD_ICON"><img class="btn_icon_img" src="../images/plus.png"></span>
+                </label>
+                <label class="UPLOAD_FILE">
+                  <input type="file">
+                  <span class="UPLOAD_ICON"><img class="btn_icon_img" src="../images/plus.png"></span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="BOTTOM H65">
+        <div class="CONTENT">
+          <div class="FORM_BTN">
+            <div class="BTN" onclick="javascript:location.href='8.html'"><span>繼續</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 刪除照片彈窗 -->
+    <div id="DELETE_PHTOT" style="position: fixed; left: 0px; right: 0px; bottom: 0px; z-index: 20; display: none;">
+      <div class="ALERT_FORM_SET">
+        <div class="ALERT_BTN"><span class="red">刪除照片</span></div>
+      </div>
+      <div class="ALERT_FORM_SET">
+        <div id="CANCEL_BTN" class="ALERT_BTN" onclick=""><b>取消</b></div>
+      </div>
+    </div>
+    <!-- 刪除照片彈窗 end -->
+
+    <!-- 半透黑背景 -->
+    <div id="CLOSE_BG" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 15; display:none;"></div>
+    <!-- 半透黑背景 end -->
+    
+    <script>
+      var CLOSE_BG = document.getElementById("CLOSE_BG");
+      var CANCEL_BTN = document.getElementById("CANCEL_BTN");
+      var DELETE_PHTOT_BTN = document.getElementById("DELETE_PHTOT_BTN");
+      var DELETE_PHTOT = document.getElementById("DELETE_PHTOT");
+      DELETE_PHTOT_BTN.onclick = function() {
+        DELETE_PHTOT.style.display = "block";
+        CLOSE_BG.style.display = "block";
+      }
+      CLOSE_BG.onclick = function() {
+        DELETE_PHTOT.style.display = "none";
+        CLOSE_BG.style.display = "none";
+      }
+      CANCEL_BTN.onclick = function() {
+        DELETE_PHTOT.style.display = "none";
+        CLOSE_BG.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
