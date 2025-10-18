@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>聊播 -聊天交友 APP</title>
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+  </head>
+
+  <body>
+    <div class="WRAPPER">
+      <div class="DETAIL">
+
+        <div id="STICKY_TOP" class="HEAD STICKY_TOP">
+          <div class="MD_W">
+            <div class="LEFT_BTN"><div class="btn_icon_block" onclick="history.back()"><img class="btn_icon_img" src="images/arrow_left.png"></div></div>
+            <div class="CENTER"></div>
+            <div class="RIGHT_BTN" id="HOST_MORE2"><div class="btn_icon_block" onclick="#"><img class="btn_icon_img" src="images/dots.png"></div></div>
+          </div>
+        </div>
+
+        <div class="DETAIL_PHOTO">
+          <div id="dot" class="PROGRESS_BAR dot-container">
+            <div id="dot-1" class="PROGRESS_ITEM dot PROGRESS_ITEM_ON"></div><div id="dot-2" class="PROGRESS_ITEM dot"></div><div id="dot-3" class="PROGRESS_ITEM dot"></div><div id="dot-4" class="PROGRESS_ITEM dot"></div><div id="dot-5" class="PROGRESS_ITEM dot"></div>
+          </div>
+          <div class="TOP_MENU">
+            <div class="LEFT_BTN"><div class="btn_icon_block" onclick="history.back()"><img class="btn_icon_img" src="images/arrow_left_w.png"></div></div>
+            <div class="CENTER"></div>
+            <div class="RIGHT_BTN" id="HOST_MORE"><div class="btn_icon_block" onclick="#"><img class="btn_icon_img" src="images/dots_w.png"></div></div>
+          </div>
+
+          <span id="previous" class="CLICK_PREVIOUS arrow--prev"></span>
+          <span id="next" class="CLICK_NEXT arrow--next"></span>
+          <span id="more" class="CLICK_BACK" onclick="history.back()"> <span class="BTN_MORE_DOWN"></span></span>
+
+          <div id="slider" class="SLIDER slider">
+            <ul class="slider__img-container">
+              <li class="SLIDER_PHOTO slide"><img src="images/photos/01.jpg" alt="" class="slide__img"></li>
+              <li class="SLIDER_PHOTO slide"><img src="images/photos/02.jpg" alt="" class="slide__img"></li>
+              <li class="SLIDER_PHOTO slide"><img src="images/photos/03.jpg" alt="" class="slide__img"></li>
+              <li class="SLIDER_PHOTO slide"><img src="images/photos/04.jpg" alt="" class="slide__img"></li>
+              <li class="SLIDER_PHOTO slide"><img src="images/photos/05.jpg" alt="" class="slide__img"></li>
+            </ul>
+          </div>
+        </div>
+
+
+
+        <div class="CONTENT">
+          <div class="SECTION">
+            <span>Hi, 我是</span><div class="TOP"><h1 class="NAME">Naomi</h1><img class="VERIFY" src="images/verify.png"></div>
+            <div class="TAGS">
+              <span class="TAG"><img class="IC_IMAGE" src="images/cake.png">28 歲</span>
+              <span class="TAG"><img class="IC_IMAGE" src="images/ruler.png">162 cm</span>
+            </div>
+          </div>
+          <div class="SECTION">
+            <h5 class="SUBTITLE">關於我</h5>
+            <div class="ABOUT">如已婚、非單身、找包養，<br>請左滑相互尊重 輕鬆聊~</div>
+          </div>
+          <div class="SECTION">
+            <h5 class="SUBTITLE">基本資料</h5>
+            <div class="TAGS">
+              <span class="TAG"><img class="IC_IMAGE" src="images/female.png">女性</span><!--span class="TAG"><img class="IC_IMAGE" src="images/male.png">男性</span-->
+              <span class="TAG"><img class="IC_IMAGE" src="images/horoscope.png">雙魚座</span>
+              <span class="TAG"><img class="IC_IMAGE" src="images/academic.png">研士及以上</span>
+              <span class="TAG"><img class="IC_IMAGE" src="images/work.png">科技行業 / 科學研究</span>
+            </div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/globe.png">中文、English、日本語、한국어、Deutsch、ไทย、español、français、hrvatski</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/eat.png">其他飲食偏好</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/exercise.png">經常</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/blood.png">AB 型</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/smoke.png">不抽菸</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/wine.png">社交需求時</div>
+            <div class="INFO"><img class="IC_IMAGE" src="images/animal.png">沒有寵物</div>
+          </div>
+          <div class="SECTION">
+            <h5 class="SUBTITLE">我的興趣</h5>
+            <div class="TAGS"><span class="TAG">跑步</span><span class="TAG">瑜珈</span><span class="TAG">古典音樂</span><span class="TAG">會樂器</span><span class="TAG">咖啡</span><span class="TAG">異國料理</span><span class="TAG">Netflix</span><span class="TAG">探索新城市</span><span class="TAG">Youtube</span><span class="TAG">電影愛好者</span></div>
+          </div>
+        </div>
+
+        <div class="MATCH_ACTION">
+          <div class="BTN_DISLIKE"><img src="images/dislike.png"></div>
+          <div class="BTN_LIKE" onclick="location.href='match.html';"><img src="images/like.png"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- 封鎖檢舉彈窗 -->
+    <div id="HOST_MORE_FORM" style="position: fixed; left: 0px; right: 0px; bottom: 0px; z-index: 20; display: none;">
+      <div class="ALERT_FORM_SET">
+        <div class="ALERT_BTN"><span class="red">匿名檢舉並封鎖</span></div>
+        <div class="ALERT_BTN">封鎖</div>
+      </div>
+      <div class="ALERT_FORM_SET">
+        <div id="CANCEL_BTN" class="ALERT_BTN" onclick=""><b>取消</b></div>
+      </div>
+    </div>
+    <!-- 封鎖檢舉彈窗 end -->
+
+    <!-- 半透黑背景 -->
+    <div id="CLOSE_BG" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 15; display:none;"></div>
+    <!-- 半透黑背景 end -->
+
+
+    <script>
+      let img_width = document.querySelector('.slider').clientWidth;
+      const imgs_container = document.querySelector('.slider__img-container');
+      const imgs = document.querySelectorAll('.slide');
+      const total_imgs = imgs.length;
+
+      // 因為 dom 的設定，這個容器變成最上層...(滑鼠的點擊事件都會在這裡)
+      const arrow_dot_container = document.querySelector('.slider__arrow-nav-container');
+
+      const dots_container = document.querySelector('.dot-container');
+      const prev_btn = document.querySelector('.arrow--prev');
+      const next_btn = document.querySelector('.arrow--next');
+
+      const slide_seconds = 4000;
+      let current_index = 1;  // 記錄現在跑的位置
+      let last_index;         // 把上一個的 Class 清除
+      let move_distance;      // 每張圖片需要移動的距離
+      let timer;
+
+      let mouse_is_down = false;     // 是否按住滑鼠
+      let mouse_position_x = [0, 0]; // 記錄滑鼠開始和結束的位置 
+
+      /** * 計算往下一張的距離 * 左邊作為預設的 slide 方向 */ 
+      function calculateNextDistance() {
+        move_distance = -(current_index * img_width); // 圖片的 index 位置 x 容器寬度。 ex.輪播二 2 x 800 = 1600
+        last_index = current_index;
+
+        //  往愈大張方向移動，不斷遞增，需考慮移到最後一張時的邏輯
+        if (current_index == total_imgs) {
+          current_index = 1;
+          move_distance = 0;
+        } else {
+          current_index++;
+        }
+        slideImages();
+      }
+
+
+      /*** 計算往上一張的距離* 只有按 Prev Btn 才會觸發 */
+      function calculatePrevDistance() {
+        // 往愈小張方向移動，不斷遞減，需考慮移到第一張時的邏輯 
+        // 注意：current_index 不能 = 0，因為 dot id 是從 1 ～ 5 排序，
+        // 不然 slideImages() 會爛掉，抓不到 #dot-${current_index} 的值
+        if (current_index > 1) {
+          last_index = current_index;
+          current_index--;
+          move_distance = move_distance + img_width; // 已記錄正在跑的 move_distance (為負值) + 容器寬度
+        } else {
+          last_index = current_index;
+          current_index = total_imgs;
+          move_distance = -((total_imgs - 1) * img_width);
+        }
+        slideImages();
+      }
+
+
+      /*** 移動圖片 */
+      function slideImages(drag_distance) {
+        clearInterval(timer);
+
+        // 若沒有傳入值，則使用全域 move_distance 做為移動距離;
+        const distance = drag_distance || move_distance;
+
+        imgs_container.style.transform = `translateX(${distance}px)`;
+        document.querySelector(`#dot-${last_index}`).classList.remove('PROGRESS_ITEM_ON');
+        document.querySelector(`#dot-${current_index}`).classList.add('PROGRESS_ITEM_ON');
+
+        timer = setInterval(calculateNextDistance, slide_seconds);
+
+        // console.log(`current_index: ${current_index}, last_index: ${last_index} || img_width: ${img_width} || move_distance: ${move_distance} || container_width: ${imgs_container.style.width}`)
+      }
+
+
+      /*** 點選 dot，計算距離、換成對應的圖片 */
+      function slideDotImages(e) {
+        const dots = this.querySelectorAll('.dot');
+
+        // 跑完所有 dot，和點選到的 dot 做比對
+        // 注意 last_index 和 current_index 的優先順序
+        for (var i = 1; i <= dots.length; i++) {
+          if (e.target.id == `dot-${i}`) {
+            last_index = current_index;
+            current_index = i;
+            move_distance = -((current_index - 1) * img_width);
+          }
+        }
+        slideImages();
+      }
+
+
+      /** * 製造拖曳預覽效果 */
+      function createDraggingEffects(e) {
+        // 記錄正在移動的最後位置
+
+        mouse_position_x[1] = e.clientX;
+        if (mouse_position_x[0] == mouse_position_x[1]) {
+          return false;
+        }
+
+        // 拖曳預覽效果
+        // 還沒真的變換圖片，判斷滑鼠拖曳多少，圖片該跟著移動多少
+        let scrolled_distance = Math.abs((mouse_position_x[0] - mouse_position_x[1]));
+        const weight = img_width / 12; // 讓圖片被拖曳的效果更明顯，除數 12 愈大效果愈差
+
+        if (mouse_position_x[0] > mouse_position_x[1]) {  // 往下一張
+          scrolled_distance = move_distance - scrolled_distance - weight;
+        } else { // 往上一張
+          scrolled_distance = move_distance + scrolled_distance + weight;
+        }
+
+        slideImages(scrolled_distance); 
+
+        console.log(current_index)
+        console.log(mouse_position_x);
+      }
+
+
+      /*** 拖曳變換圖片 */
+      function dragAndSlideImages() {
+        if (mouse_position_x[0] == mouse_position_x[1]) {
+          slideImages();
+          return false;
+        }
+
+        // 如果滑鼠移動差距很小(不超過30)，就不要換圖片，彈回到原本的位置
+        // 不加 abs ，相減出來會變負數
+        if (Math.abs(mouse_position_x[0] - mouse_position_x[1]) < 30) {
+          slideImages(); // 原本拖曳第2張一點點，讓它在回到第2張最初的位置
+          return false; // 不繼續執行以下
+        }
+
+        // 變換圖片
+        // 往前、往後拖曳 = 按前、後按鈕的原理
+        if (mouse_position_x[0] > mouse_position_x[1]) {
+          calculateNextDistance();
+        } else {
+          calculatePrevDistance();
+        }
+      }
+
+
+      /*** 初始化 */
+      function init() {
+        document.querySelector(`#dot-${current_index}`).classList.remove('is-active');
+
+        img_width = document.querySelector('.slider').clientWidth;
+        imgs.forEach(img => img.style.width = `${img_width}px`);
+        imgs_container.style.width = `${img_width * total_imgs}px`;
+
+        current_index = total_imgs;
+        calculateNextDistance();
+      }
+
+      init();
+
+      next_btn.addEventListener('click', calculateNextDistance);
+      prev_btn.addEventListener('click', calculatePrevDistance);
+      dots_container.addEventListener('click', slideDotImages);
+      window.addEventListener('resize', init);
+
+    </script>
+
+    <script>
+      var CLOSE_BG = document.getElementById("CLOSE_BG");
+      var CANCEL_BTN = document.getElementById("CANCEL_BTN");
+      var HOST_MORE = document.getElementById("HOST_MORE");
+      var HOST_MORE2 = document.getElementById("HOST_MORE2");
+      var HOST_MORE_FORM = document.getElementById("HOST_MORE_FORM");
+      HOST_MORE.onclick = function() {
+        HOST_MORE_FORM.style.display = "block";
+        CLOSE_BG.style.display = "block";
+      }
+      HOST_MORE2.onclick = function() {
+        HOST_MORE_FORM.style.display = "block";
+        CLOSE_BG.style.display = "block";
+      }
+      CLOSE_BG.onclick = function() {
+        HOST_MORE_FORM.style.display = "none";
+        CLOSE_BG.style.display = "none";
+      }
+      CANCEL_BTN.onclick = function() {
+        HOST_MORE_FORM.style.display = "none";
+        CLOSE_BG.style.display = "none";
+      }
+    </script>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+
+      var header = document.getElementById("STICKY_TOP");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,">
+    <title>聊天交友 APP</title>
+    <link rel="stylesheet" type="text/css" href="../mobile.css">
+  </head>
+  <body>
+    <div class="WRAPPER">
+      <div class="HEAD H65">
+        <div class="CONTENT">
+          <div class="PROGRESS_BAR">
+            <div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM_ON"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div><div class="PROGRESS_ITEM"></div>
+          </div>
+          <div class="MD_W">
+            <div class="LEFT_BTN"><div class="BACK btn_icon_block" onclick="history.back()"><img class="btn_icon_img" src="../images/arrow_left.png" srcset=""></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="MAIN">
+        <div class="CONTENT GROWFULL">
+          <h1 class="TITLE">上傳照片</h1>
+          <div class="h5">選擇一張五官清晰的正面照，上傳真實清晰的本人照片會更受歡迎，並交到更多朋友</div>
+          <form name="UP_LOGON_FORM" id="UP_LOGON_FORM" action="index.phtml" method="POST" onsubmit="">
+            <input type="hidden" name="PUT" value="up_logon">
+            <input type="hidden" name="FROM" value="up_logon">
+            <input type="hidden" name="FID" value="0">
+            <div class="FORM_FIELD">
+              <div class="FORM_ITEM">
+                <label class="UPLOAD_FILE">
+                  <input type="file">
+                  <span class="UPLOAD_ICON"><img class="btn_icon_img" src="../images/plus.png"></span>
+                </label>
+                <!-- 已上傳版
+                <label class="UPLOAD_FILE">
+                  <img class="UPLOAD_PHOTO" src="../images/photos/01.jpg">
+                  <div class="BTN_DELETE"><img class="btn_icon_img" src="../images/dislike.png"></div>
+                </label>
+                -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="BOTTOM H65">
+        <div class="CONTENT">
+          <div class="FORM_BTN">
+            <div class="BTN_DISABLE" onclick="javascript:location.href='7.html'"><span>繼續</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
