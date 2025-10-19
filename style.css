@@ -106,7 +106,7 @@ iframe{ border: 0px; }
 .portfolio .images-four{ grid-template-columns: 1fr 1fr 1fr 1fr; padding: 15px; }
 .portfolio .images{  }
 .portfolio .images img{ width: inherit; max-width: 100%; }
-.portfolio .images-info{ margin: 0.2rem 0 2rem; color: rgba(245, 245, 245, 0.75); font-style: italic; text-align: center; }
+.portfolio .images-info{ margin: 0.2rem 0 2rem; color: rgba(245, 245, 245, 0.75); font-style: italic; text-align: center; font-weight: 300; }
 
 .portfolio .images-one iframe { width: 500px; height: 350px; }
 
