@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dating App Demo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      background: #434347;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    /* 手機版直接全螢幕顯示 iframe */
+    @media (max-width: 768px) {
+      body {
+        padding: 0;
+        background: white;
+      }
+      
+      .phone-frame {
+        width: 100vw !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
+      
+      .notice {
+        display: none;
+      }
+      
+      iframe {
+        border-radius: 0 !important;
+        height: 100vh;
+        width: 100vw;
+        border: 0;
+      }
+    }
+    
+    /* 桌面版顯示手機外框 */
+    @media (min-width: 769px) {
+      .notice {
+        position: fixed;
+        top: 30px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 12px 24px;
+        border-radius: 25px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        font-size: 14px;
+        color: #333;
+        z-index: 1000;
+      }
+      
+      .phone-frame {
+        width: 375px;
+        height: 667px;
+        border-radius: 20px;
+        box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+        position: relative;
+      }
+      
+      /* 模擬手機瀏海 
+      .phone-frame::before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 25px;
+        background: #0a0a0a;
+        border-radius: 0 0 15px 15px;
+        z-index: 10;
+      }*/
+      
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 19px;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="notice">📱 Best viewed on mobile devices</div>
+  <div class="phone-frame">
+    <iframe src="./app_demo/index.html"></iframe>
+  </div>
+</body>
+</html>
