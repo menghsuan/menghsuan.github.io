@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>聊播 -聊天交友 APP</title>
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+  </head>
+
+  <body>
+
+    <div class="MATCH">
+      <div class="PHOTO"><img src="images/photos/01.jpg"></div>
+      <div class="MATCH_BOX">
+        <div class="TOP">
+          <h2>配對成功</h2>
+          <p class="h3"><b class="NAME">Naomi<!--一二三四五六七八九十一二三四五六七八九十一二三四五六七八九十--></b>也喜歡了你 !</p>
+        </div>
+        <div class="EDIT_MESSAGE" id="TOP_POP_BTN">
+          <div class="INPUT_TEXT"><input id="sm" class="sm" placeholder="打個招呼吧"></div>
+          <div class="SEND"><div class="btn_icon_block disable"><img class="btn_icon_img" src="images/paperairplane.png"></div></div>
+        </div>
+        <div class="FORM_BTN">
+          <a class="BTN_LINK" href="index.html">繼續探索</a>
+        </div>
+      </div>
+      <div class="ANI_HEARTS">
+        <div class="I_HEART X1"></div>
+        <div class="I_HEART X2"></div>
+        <div class="I_HEART X3"></div>
+        <div class="I_HEART X4"></div>
+        <div class="I_HEART X5"></div>
+      </div>
+    </div>
+
+    <!-- 對話選單 -->
+    <div id="FORM_POP" class="FORM_FILTER WRAPPER" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; display: none; animation: slideLeft 0.3s; background-color: #ffffff;">
+
+      <div class="TOP_MENU H45">
+        <div class="MD_W">
+          <div class="LEFT_BTN"></div>
+          <div class="CENTER"></div>
+          <div class="RIGHT_BTN"><div id="CLOSE_BTN" class="btn_icon_block"><img class="btn_icon_img" src="images/close.png"></div></div>
+        </div>
+      </div>
+
+      <div class="MAIN">
+        <div class="CONTENT GROWFULL">
+          <div class="FORM_FIELD">
+            <div class="FORM_ITEM">
+              <div class="TAG_INLINE">
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">你好呀</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">哈囉~最近有去哪裡玩嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">早安午安晚安!你好!</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">嗨!很高興認識你</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">嗨嗨!最近有看什麼新電影嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">你的周末過得怎麼樣呢?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">Hi~</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">嘿,你好呀!</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">Hi,你也喜歡喝咖啡嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">哈囉, 你上次去旅行是什麼時候呀?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">身材好好! 怎麼練的?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">Hey! 在忙嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">嗨~ 你在這有遇到什麼有趣的人嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">Hi, 你上次去旅行是什麼時候阿?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">哇, 你去過東京嗎?</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">照片好看!</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">跟你說, 算命的說我跟雙魚座很合!</span></label>
+                <label class="RADIO_LABEL"><input class="RADIO_INPUT" type="radio" name="suggest" value=""><span class="RADIO_BTN" for="suggest">Name你好阿, 在做什麼呢?</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="BOTTOM H65">
+        <div class="EDIT_MESSAGE_BLOCK">
+          <div class="EDIT_MESSAGE">
+            <div class="INPUT_TEXT"><input id="sm" class="sm" placeholder="打個招呼吧"></div>
+            <div class="SEND"><div class="btn_icon_block disable"><img class="btn_icon_img" src="images/paperairplane.png"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- 對話選單 end -->
+
+    <script>
+      var TOP_POP_BTN = document.getElementById("TOP_POP_BTN");
+      var FORM_POP = document.getElementById("FORM_POP");      
+      var CLOSE_BTN = document.getElementById("CLOSE_BTN");
+      TOP_POP_BTN.onclick = function() {
+        FORM_POP.style.display = "flex";
+      }
+      CLOSE_BTN.onclick = function() {
+        FORM_POP.style.display = "none";
+      }
+    </script>
+
+  </body>
+</html>
